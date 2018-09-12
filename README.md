@@ -23,6 +23,8 @@
 4. Scegliere il file .zip scaricato in precedenza, senza decomprimerlo e cliccare _"Installa ora"_
 5. Selezionare _"Attiva"_ per poter utilizzare il tema
 
+_[ Testato su: **WordPress 4.9.8** | **PHP 5.6.37** ]_
+
 ---
 
 ## Configurare _ItaliaWP_:

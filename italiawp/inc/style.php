@@ -62,6 +62,8 @@ function italiawp_dymanic_styles() {
     $color_compl_5 = colorSetSL(colorCompl($main_color), 20, 95);
     $color_compl_10 = colorSetSL(colorCompl($main_color), 30, 90);
     $color_compl_80 = colorSetSL(colorCompl($main_color), 100, 40);
+    
+    $color_compl_link_footer = colorSetSL($main_color, 100, 80);
 
     $custom_css = "
 .u-color-black {
@@ -120,6 +122,11 @@ function italiawp_dymanic_styles() {
 .u-background-grey-30,
 .Treeview--default li[aria-expanded=true] li li a, .Treeview--default li[aria-expanded=true] li li a:hover {
   background-color: {$color_grey_30} !important;
+}
+
+.Accordion--default .Accordion-header, .Accordion--plus .Accordion-header, .Footer-block li, .Footer-links,
+.Footer-subBlock, .Leads-link, .Linklist li, .u-border-top-xxs {
+  border-color: {$color_grey_30} !important;
 }
 
 .u-color-grey-40,
@@ -182,8 +189,7 @@ function italiawp_dymanic_styles() {
   color: {$color_teal_50} !important;
 }
 
-.u-background-teal-50,
-.Footer-socialIcons [class*=\" Icon-\"], .Footer-socialIcons [class^=Icon-] {
+.u-background-teal-50 {
   background-color: {$color_teal_50} !important;
 }
 
@@ -215,7 +221,7 @@ function italiawp_dymanic_styles() {
   background-color: {$color_10} !important;
 }
 
-.u-color-20 {
+.u-color-20, .Footer a {
   color: {$color_20} !important;
 }
 
@@ -302,7 +308,8 @@ function italiawp_dymanic_styles() {
 .Linklist-link.Linklist-link--lev3, .Linklist a:hover,
 .Megamenu--default .Megamenu-subnavGroup>li>a, .Treeview--default li[aria-expanded=true] li a,
 .Treeview--default li[aria-expanded=true] li a:hover, .Treeview--default li[aria-expanded=true] li li a,
-.Treeview--default li[aria-expanded=true] li li a:hover {
+.Treeview--default li[aria-expanded=true] li li a:hover, #wp-calendar a,
+.Footer-socialIcons [class*=Icon-], .Footer-socialIcons [class^=Icon-] {
   color: {$color_95} !important;
 }
 
@@ -346,6 +353,14 @@ function italiawp_dymanic_styles() {
 .u-background-compl-80,
 .u-background-compl-80 a:not(.Button--info) {
   background-color: {$color_compl_80} !important;
+}
+
+.Footer a {
+  color: {$color_compl_link_footer} !important;
+}
+
+#wp-calendar a, .Footer-socialIcons [class*=Icon-], .Footer-socialIcons [class^=Icon-] {
+  background-color: {$color_compl_link_footer} !important;
 }";
 
     echo '<style>'.italiawp_css_strip_whitespace($custom_css).'</style>';

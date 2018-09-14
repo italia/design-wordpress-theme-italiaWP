@@ -196,3 +196,6 @@ $example_update_checker = new ThemeUpdateChecker(
     'italiawp',
     'https://raw.githubusercontent.com/italia/design-wordpress-theme-wt/master/italiawp.json'
 );
+
+/* Per la ricerca manuale degli aggiornamenti, altrimenti avviene automaticamente ogni 12 ore */
+//$example_update_checker->checkForUpdates();

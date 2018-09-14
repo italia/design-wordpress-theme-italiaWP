@@ -51,13 +51,11 @@
                 <div class="Footer-block Grid-cell u-sm-size1of2 u-md-size1of4 u-lg-size1of4">
                     <h2 class="Footer-blockTitle">Contatti</h2>
                     <div class="Footer-subBlock">
-                        <h3 class="Footer-subTitle">Recapiti</h3>
+                        <h3 class="Footer-subTitle">Informazioni</h3>
                         <address>
                             <?php echo get_option('dettagli-indirizzo'); ?><br>
-                            <?php echo get_option('dettagli-cap'); ?>, <?php echo get_option('dettagli-citta'); ?><br>
-                            Tel. <a href="tel:+39<?php echo get_option('dettagli-telefono'); ?>" >(+39) <?php echo get_option('dettagli-telefono'); ?></a><br>
-                            Fax. <a href="tel:+39<?php echo get_option('dettagli-fax'); ?>" >(+39) <?php echo get_option('dettagli-fax'); ?></a><br>
-                            C.F. / P.IVA <?php echo get_option('dettagli-cfpiva'); ?>
+                            <?php echo get_option('dettagli-cap'); ?>, <?php echo get_option('dettagli-citta'); ?><br><br>
+                            C.F. / P.IVA<br><?php echo get_option('dettagli-cfpiva'); ?>
                         </address>
                     </div>
                 </div>
@@ -67,10 +65,8 @@
                     <div class="Footer-subBlock">
                         <h3 class="Footer-subTitle">Recapiti</h3>
                         <address>
-                            Email: <a href="mailto:<?php echo get_option('dettagli-email'); ?>" ><?php echo get_option('dettagli-email'); ?></a><br>
-                        <?php if(get_option('dettagli-email2')!="") { ?>
-                            Email: <a href="mailto:<?php echo get_option('dettagli-email2'); ?>" ><?php echo get_option('dettagli-email2'); ?></a>
-                        <?php } ?>
+                            Telefono<br><a href="tel:+39<?php echo get_option('dettagli-telefono'); ?>" >(+39) <?php echo get_option('dettagli-telefono'); ?></a><br><br>
+                            Fax<br><a href="tel:+39<?php echo get_option('dettagli-fax'); ?>" >(+39) <?php echo get_option('dettagli-fax'); ?></a><br><br>
                         </address>
                     </div>
                 </div>
@@ -78,8 +74,14 @@
                 <div class="Footer-block Grid-cell u-sm-size1of2 u-md-size1of4 u-lg-size1of4">
                     <h2 class="Footer-blockTitle">Contatti</h2>
                     <div class="Footer-subBlock">
-                        <h3 class="Footer-subTitle">Indirizzo PEC</h3>
-                        <p><a href="mailto:<?php echo get_option('dettagli-pec'); ?>" ><?php echo get_option('dettagli-pec'); ?></a><br></p>
+                        <h3 class="Footer-subTitle">Indirizzi Email</h3>
+                        <address>
+                            PEC<br><a href="mailto:<?php echo get_option('dettagli-pec'); ?>" ><?php echo get_option('dettagli-pec'); ?></a><br><br>
+                            Email<br><a href="mailto:<?php echo get_option('dettagli-email'); ?>" ><?php echo get_option('dettagli-email'); ?></a><br><br>
+                        <?php if(get_option('dettagli-email2')!="") { ?>
+                            Email<br><a href="mailto:<?php echo get_option('dettagli-email2'); ?>" ><?php echo get_option('dettagli-email2'); ?></a>
+                        <?php } ?>
+                        </address>
                     </div>
                 </div>
 

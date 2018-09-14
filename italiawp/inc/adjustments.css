@@ -93,8 +93,6 @@ table#wp-calendar tfoot td {
 }
 
 #wp-calendar a {
-    color: #30373d !important;
-    background: #65dcdf !important;
     -webkit-box-shadow: none;
     box-shadow: none;
     border-radius: 3px;

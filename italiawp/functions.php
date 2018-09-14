@@ -189,3 +189,10 @@ add_filter('the_excerpt', function ($excerpt) {
 add_filter('get_the_excerpt', function ($excerpt) {
     return substr(strip_shortcodes($excerpt), 0, strpos(strip_shortcodes($excerpt), '.') + 1);
 });
+
+/* UPDATER THEME VERSION  - https://w-shadow.com/blog/2011/06/02/automatic-updates-for-commercial-themes/ */
+require 'inc/theme-update-checker.php';
+$example_update_checker = new ThemeUpdateChecker(
+    'italiawp',
+    'https://raw.githubusercontent.com/italia/design-wordpress-theme-wt/master/italiawp.json'
+);

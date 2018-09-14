@@ -55,6 +55,12 @@ _[ Testato su: **WordPress 4.9.8** | **PHP 5.6.37** ]_
 
 ---
 
+## Aggiornamenti:
+
+Gli aggiornamenti sono notificati in _"Aspetto" > "Temi"_ del backend di WordPress.
+
+---
+
 ## Licenza:
 
 Copyright (c) 2018 & moral rights [**Boris Amico**](http://borisamico.it).
@@ -84,3 +90,4 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 * **Rem** [clicca qui](https://github.com/chuckcarpenter/REM-unit-polyfill/blob/master/LICENSE.md)
 * **Respond** [clicca qui](http://j.mp/respondjs)
 * **Selectivizr** [clicca qui](http://selectivizr.com/)
+* **Theme update checker** [clicca qui](https://w-shadow.com/blog/2011/06/02/automatic-updates-for-commercial-themes/)

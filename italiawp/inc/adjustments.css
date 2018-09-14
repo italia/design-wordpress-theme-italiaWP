@@ -131,3 +131,7 @@ table#wp-calendar tfoot td {
 .image-content {
     display: inline-block !important;
 }
+
+.Header-logo img {
+    width: auto !important;
+}

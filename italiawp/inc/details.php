@@ -56,8 +56,14 @@ function italiawp_edit_custom_settings() { ?>
             <p><strong>Email:</strong><br />
                 <input type="text" name="dettagli-email" size="100" value="<?php echo get_option('dettagli-email'); ?>" /></p>
             
+            <p><strong>Email 2 (opzionale):</strong><br />
+                <input type="text" name="dettagli-email2" size="100" value="<?php echo get_option('dettagli-email2'); ?>" /></p>
+            
             <p><strong>PEC:</strong><br />
                 <input type="text" name="dettagli-pec" size="100" value="<?php echo get_option('dettagli-pec'); ?>" /></p>
+            
+            <p><strong>C.F. / P.IVA:</strong><br />
+                <input type="text" name="dettagli-cfpiva" size="100" value="<?php echo get_option('dettagli-cfpiva'); ?>" /></p>
 
             <h3>Link Social</h3>
             
@@ -83,8 +89,9 @@ function italiawp_edit_custom_settings() { ?>
                                                             dettagli-nome-ammin-afferente,dettagli-url-ammin-afferente,
                                                             dettagli-id-privacy,dettagli-id-notelegali,dettagli-id-contatti,
                                                             dettagli-indirizzo,dettagli-cap,dettagli-citta,dettagli-telefono,dettagli-fax,
-                                                            dettagli-email,dettagli-pec,dettagli-facebook,dettagli-twitter,
-                                                            dettagli-youtube,dettagli-instagram,dettagli-map" />
+                                                            dettagli-email,dettagli-pec,dettagli-cfpiva,dettagli-facebook,
+                                                            dettagli-twitter,dettagli-youtube,dettagli-instagram,dettagli-map,
+                                                            dettagli-email2" />
 
         </form>
     </div>

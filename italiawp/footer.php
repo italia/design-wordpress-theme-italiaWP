@@ -56,7 +56,8 @@
                             <?php echo get_option('dettagli-indirizzo'); ?><br>
                             <?php echo get_option('dettagli-cap'); ?>, <?php echo get_option('dettagli-citta'); ?><br>
                             Tel. <a href="tel:+39<?php echo get_option('dettagli-telefono'); ?>" >(+39) <?php echo get_option('dettagli-telefono'); ?></a><br>
-                            Fax. <a href="tel:+39<?php echo get_option('dettagli-fax'); ?>" >(+39) <?php echo get_option('dettagli-fax'); ?></a>
+                            Fax. <a href="tel:+39<?php echo get_option('dettagli-fax'); ?>" >(+39) <?php echo get_option('dettagli-fax'); ?></a><br>
+                            C.F. / P.IVA <?php echo get_option('dettagli-cfpiva'); ?>
                         </address>
                     </div>
                 </div>
@@ -67,6 +68,9 @@
                         <h3 class="Footer-subTitle">Recapiti</h3>
                         <address>
                             Email: <a href="mailto:<?php echo get_option('dettagli-email'); ?>" ><?php echo get_option('dettagli-email'); ?></a><br>
+                        <?php if(get_option('dettagli-email2')!="") { ?>
+                            Email: <a href="mailto:<?php echo get_option('dettagli-email2'); ?>" ><?php echo get_option('dettagli-email2'); ?></a>
+                        <?php } ?>
                         </address>
                     </div>
                 </div>

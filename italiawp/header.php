@@ -64,7 +64,7 @@
         </p>
         <p>
             <button class="Button Button--default u-text-r-xxs js-cookieBarAccept u-inlineBlock u-margin-r-all">Accetto</button>
-            <a href="<?php echo get_permalink(get_option('dettagli-id-privacy')); ?>" class="u-text-r-xs u-color-teal-50">Privacy policy</a>
+            <a href="<?php echo get_permalink(get_option('dettagli-id-privacy')); ?>" class="u-text-r-xs">Privacy policy</a>
         </p>
     </div>
 

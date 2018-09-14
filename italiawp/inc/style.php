@@ -77,7 +77,8 @@ function italiawp_dymanic_styles() {
 .u-color-white,
 .Bullets>li:before, .Footer, .Footer-blockTitle, .Footer-subTitle, .Form-input.Form-input:focus+[role=tooltip],
 .Linklist-link.Linklist-link--lev1, .Linklist-link.Linklist-link--lev1:hover, .Megamenu--default .Megamenu-item>a,
-.ScrollTop, .ScrollTop-icon, .Share-reveal>a>span, .Share-revealIcon, .Share>ul>li, .Share>ul>li>a, .Spid-button {
+.ScrollTop, .ScrollTop-icon, .Share-reveal>a>span, .Share-revealIcon, .Share>ul>li, .Share>ul>li>a, .Spid-button,
+.Footer-block li, .Footer-subBlock {
   color: {$color_white} !important;
 }
 
@@ -139,7 +140,7 @@ function italiawp_dymanic_styles() {
 }
 
 .u-color-grey-50,
-.Footer-block li, .Footer-subBlock, .Megamenu--default .Megamenu-subnavGroup>li, .Share-revealText {
+.Megamenu--default .Megamenu-subnavGroup>li, .Share-revealText {
   color: {$color_grey_50} !important;
 }
 
@@ -184,8 +185,7 @@ function italiawp_dymanic_styles() {
   background-color: {$color_teal_30} !important;
 }
 
-.u-color-teal-50,
-.Footer a:not(#wp-calendar a) {
+.u-color-teal-50 {
   color: {$color_teal_50} !important;
 }
 
@@ -221,7 +221,7 @@ function italiawp_dymanic_styles() {
   background-color: {$color_10} !important;
 }
 
-.u-color-20, .Footer a {
+.u-color-20 {
   color: {$color_20} !important;
 }
 
@@ -258,7 +258,8 @@ function italiawp_dymanic_styles() {
 
 .u-background-50,
 .Header-navbar,
-.Bullets>li:before, .Share-revealIcon, .Share>ul>li {
+.Bullets>li:before, .Share-revealIcon, .Share>ul>li,
+.Header-searchTrigger button {
   background-color: {$color_50} !important;
 }
 
@@ -309,7 +310,8 @@ function italiawp_dymanic_styles() {
 .Megamenu--default .Megamenu-subnavGroup>li>a, .Treeview--default li[aria-expanded=true] li a,
 .Treeview--default li[aria-expanded=true] li a:hover, .Treeview--default li[aria-expanded=true] li li a,
 .Treeview--default li[aria-expanded=true] li li a:hover, #wp-calendar a,
-.Footer-socialIcons [class*=Icon-], .Footer-socialIcons [class^=Icon-] {
+.Footer-socialIcons [class*=Icon-], .Footer-socialIcons [class^=Icon-],
+.Button--default {
   color: {$color_95} !important;
 }
 
@@ -355,11 +357,16 @@ function italiawp_dymanic_styles() {
   background-color: {$color_compl_80} !important;
 }
 
-.Footer a {
+.Footer a, .CookieBar a {
   color: {$color_compl_link_footer} !important;
 }
 
-#wp-calendar a, .Footer-socialIcons [class*=Icon-], .Footer-socialIcons [class^=Icon-] {
+.Button--default {
+    border-color: {$color_compl_link_footer} !important;
+}
+
+#wp-calendar a, .Footer-socialIcons [class*=Icon-], .Footer-socialIcons [class^=Icon-],
+.Button--default {
   background-color: {$color_compl_link_footer} !important;
 }";
 

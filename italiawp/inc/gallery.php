@@ -39,7 +39,7 @@ function italiawp_custom_gallery( $output = '', $atts, $instance ) {
 <section class="u-nbfc u-borderShadow-xxs u-borderRadius-m u-color-grey-30 u-background-white">
     <figure class="u-background-grey-60 u-padding-all-s">';
         if($link_url!="") {
-            $return .= '<a href="'.$link_url.'" title="'.$attachment_meta['caption'].'" class="img-link-gallery u-borderFocus u-block u-padding-all-xxs">';
+            $return .= '<a href="'.$link_url.'" title="'.$attachment_meta['caption'].'" class="magnific-popup-gallery u-borderFocus u-block u-padding-all-xxs">';
         }
             $return .= '<img src="'.$image_size[0].'" class="u-sizeFull in-gallery" alt="'.$attachment_meta['caption'].'"/>';
         if($link_url!="") {

@@ -20,11 +20,12 @@
     <?php } ?>
 
     <link media="all" rel="stylesheet" href="<?php bloginfo('template_url'); ?>/webtoolkit/build.css">
+    <link media="all" rel="stylesheet" href="<?php bloginfo('template_url'); ?>/inc/magnific-popup/magnific-popup.css">
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
-
+    
     <?php $custom_logo_id = get_theme_mod( 'custom_logo' );
           $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' ); ?>
-
+    
     <link rel="icon" type="image/png" href="<?php echo esc_url($logo[0]); ?>">
 
     <?php wp_head(); ?>
@@ -52,8 +53,20 @@
 
     <!-- HTML5shim per Explorer 8 -->
     <script src="<?php bloginfo('template_url'); ?>/webtoolkit/modernizr.js"></script>
+    
     <script src="<?php bloginfo('template_url'); ?>/webtoolkit/jquery.min.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/inc/magnific-popup/jquery.magnific-popup.min.js"></script>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125634207-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_TRACKING_ID', {'anonymize_ip': true});
+      gtag('config', 'UA-125634207-1');
+    </script>
+	
 </head>
 
 <body class="t-Pac">
@@ -77,7 +90,7 @@
     <?php if (get_theme_mod('menu_fixed')) { ?>
     <header class="Header Headroom--fixed js-Headroom u-hiddenPrint Headroom Headroom--not-bottom Headroom--not-top Headroom--unpinned" style="position: fixed; top: 0px;">
     <?php }else{ ?>
-    <header class="Header u-hiddenPrint">
+    <header class="Header u-hiddenPrint">    
     <?php } ?>
 
         <div class="Header-banner ">
@@ -187,8 +200,8 @@
     </section>
 
     <div id="main" class="site-content">
-
-    <?php italiawp_create_breadcrumbs(); ?>
+        
+    <?php if(!is_attachment()) italiawp_create_breadcrumbs(); ?>
 
     <?php
     if (is_front_page()) {
@@ -203,5 +216,5 @@
             get_template_part('template-parts/section-last-one-news');
         if (get_theme_mod('active_section_last_news'))
             get_template_part('template-parts/section-last-news');
-
+        
     } ?>

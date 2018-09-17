@@ -13,6 +13,21 @@ $(document).ready(function () {
     $(".map-wrap").click(function () {
         $(this).fadeOut(10);
     });
+    
+    $('.image-content a').filter(function() {
+            return $(this).attr('href').match(/\.(jpeg|jpg|png|gif)/i);
+        }).magnificPopup({
+        type: 'image'
+    });
+
+    $('.magnific-popup-gallery').filter(function() {
+            return $(this).attr('href').match(/\.(jpeg|jpg|png|gif)/i);
+        }).magnificPopup({
+            type: 'image',
+            gallery: {
+                enabled: true
+        }
+    });
 });
 
 $(window).load(function() {

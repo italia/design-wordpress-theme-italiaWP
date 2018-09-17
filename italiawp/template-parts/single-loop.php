@@ -43,7 +43,11 @@ if (have_posts()) : while (have_posts()) : the_post();
         </div>
 
         <div class="Grid-cell u-sizeFull u-md-size1of2 u-lg-size1of2 u-text-r-s u-padding-r-all">
-            <img src="<?php echo $link_img_url; ?>" class="u-sizeFull" alt="<?php the_title(); ?>">
+            <div class="u-sizeFull u-md-size11of12 u-lg-size11of12">
+                <img src="<?php echo $link_img_url; ?>" class="u-sizeFull" alt="<?php the_title(); ?>">
+            </div>
+            
+            <?php get_template_part('template-parts/attachments'); ?>
         </div>
     
         <?php

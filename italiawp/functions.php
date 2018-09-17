@@ -190,7 +190,7 @@ add_filter('get_the_excerpt', function ($excerpt) {
     return substr(strip_shortcodes($excerpt), 0, strpos(strip_shortcodes($excerpt), '.') + 1);
 });
 
-/* UPDATER THEME VERSION  - https://w-shadow.com/blog/2011/06/02/automatic-updates-for-commercial-themes/ */
+/* UPDATER THEME VERSION */
 require 'inc/theme-update-checker.php';
 $example_update_checker = new ThemeUpdateChecker(
     'italiawp',
@@ -199,3 +199,74 @@ $example_update_checker = new ThemeUpdateChecker(
 
 /* Per la ricerca manuale degli aggiornamenti, altrimenti avviene automaticamente ogni 12 ore */
 //$example_update_checker->checkForUpdates();
+
+require_once 'inc/tgm-plugin-activation/class-tgm-plugin-activation.php';
+add_action('tgmpa_register', 'italiawp_register_required_plugins');
+
+function italiawp_register_required_plugins() {
+    $plugins = array(
+        array(
+            'name' => 'Attachments',
+            'slug' => 'attachments',
+            'required' => false,
+        ),
+    );
+
+    $config = array(
+        'id' => 'italiawp',
+        'default_path' => '',
+        'menu' => 'tgmpa-install-plugins',
+        'parent_slug' => 'themes.php',
+        'capability' => 'edit_theme_options',
+        'has_notices' => true,
+        'dismissable' => true,
+        'dismiss_msg' => '',
+        'is_automatic' => false,
+        'message' => '',
+        'strings' => array(
+            'page_title' => __('Plugin richiesti dal tema "ItaliaWP"', 'italiawp'),
+            'menu_title' => __('Plugin richiesti', 'italiawp'),
+            'installing' => __('Installazione del Plugin: %s', 'italiawp'),
+            'updating' => __('Aggiornamento del Plugin: %s', 'italiawp'),
+            'oops' => __('Qualcosa è andato male con le API del Plugin.', 'italiawp'),
+            'notice_can_install_required' => _n_noop(
+                    'Il tema "ItaliaWP" richiede il plugin: %1$s.', 'Il tema "ItaliaWP" richiede i plugin: %1$s.', 'italiawp'
+            ),
+            'notice_can_install_recommended' => _n_noop(
+                    'Il tema "ItaliaWP" raccomanda il plugin: %1$s.', 'Il tema "ItaliaWP" raccomanda i plugin: %1$s.', 'italiawp'
+            ),
+            'notice_ask_to_update' => _n_noop(
+                    'Il seguente plugin deve essere aggiornato all\'ultima versione per avere massima compatibilità con questo tema: %1$s.', 'I seguenti plugin devono essere aggiornati all\'ultima versione per avere massima compatibilità con questo tema: %1$s.', 'italiawp'
+            ),
+            'notice_ask_to_update_maybe' => _n_noop(
+                    'C\'è un aggiornamento disponibile per: %1$s.', 'Ci sono aggiornamenti disponibili per: %1$s.', 'italiawp'
+            ),
+            'notice_can_activate_required' => _n_noop(
+                    'Il plugin richiesto non è attivo: %1$s.', 'I plugin richiesti non sono attivi: %1$s.', 'italiawp'
+            ),
+            'notice_can_activate_recommended' => _n_noop(
+                    'Il plugin raccomandato non è attivo: %1$s.', 'I plugin raccomandati non sono attivi: %1$s.', 'italiawp'
+            ),
+            'install_link' => _n_noop(
+                    'Installa il plugin', 'Installa i plugin', 'italiawp'
+            ),
+            'update_link' => _n_noop(
+                    'Aggiorna il plugin', 'Aggiorna i plugin', 'italiawp'
+            ),
+            'activate_link' => _n_noop(
+                    'Attiva il plugin', 'Attiva i plugin', 'italiawp'
+            ),
+            'return' => __('Ritorna all\'installazione dei Plugin Richiesti', 'italiawp'),
+            'plugin_activated' => __('Plugin attivati con successo.', 'italiawp'),
+            'activated_successfully' => __('I seguenti plugin sono stati attivati con successo:', 'italiawp'),
+            'plugin_already_active' => __('Nessuna azione richiesta. Il Plugin %1$s è già attivo.', 'italiawp'),
+            'plugin_needs_higher_version' => __('Plugin non attivato. Il tema ha bisogno di na versione più recente di %s. Per favore aggiorna il plugin.', 'italiawp'),
+            'complete' => __('Tutti i plugin sono stati installati e attivati con successo. %1$s', 'italiawp'),
+            'dismiss' => __('Nascondi la notifica', 'italiawp'),
+            'notice_cannot_install_activate' => __('Ci sono dei plugin raccomandati o richiesti da installare, aggiornare  o attivare.', 'italiawp'),
+            'contact_admin' => __('Per favore, contatta l\'amministratore del sito per assistenza.', 'italiawp'),
+            'nag_type' => '',
+        ),
+    );
+    tgmpa($plugins, $config);
+}

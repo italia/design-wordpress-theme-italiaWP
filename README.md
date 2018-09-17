@@ -61,6 +61,20 @@ Gli aggiornamenti sono notificati in _"Aspetto" > "Temi"_ del backend di WordPre
 
 ---
 
+## Plugin Wordpress:
+
+I seguenti plugins WordPress, già compresi o consigliati, sono già gestiti graficamente nel tema.
+
+**Compresi nel tema:**
+
+* [**TGM Example Plugin**](http://tgmpluginactivation.com) consente l'inclusione di Plugin nel tema
+
+**Consigliati:**
+
+* [**Attachments**](https://it.wordpress.org/plugins/attachments/) consente il caricamento di allegati in Pagine e Articoli
+
+---
+
 ## Licenza:
 
 Copyright (c) 2018 & moral rights [**Boris Amico**](http://borisamico.it).
@@ -90,4 +104,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 * **Rem** [clicca qui](https://github.com/chuckcarpenter/REM-unit-polyfill/blob/master/LICENSE.md)
 * **Respond** [clicca qui](http://j.mp/respondjs)
 * **Selectivizr** [clicca qui](http://selectivizr.com/)
-* **Theme update checker** [clicca qui](https://w-shadow.com/blog/2011/06/02/automatic-updates-for-commercial-themes/)
+* Plugin jQuery **Magnific Popup** [clicca qui](https://github.com/dimsemenov/Magnific-Popup)
+* Plugin WordPress **Theme Update Checker** [clicca qui](http://tgmpluginactivation.com)
+* Plugin WordPress **Attachments** [clicca qui](https://github.com/jchristopher/attachments)

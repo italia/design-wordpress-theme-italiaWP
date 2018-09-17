@@ -316,7 +316,7 @@ function italiawp_dymanic_styles() {
 }
 
 .u-background-95,
-.ScrollTop {
+.ScrollTop, .mfp-bg, mfp-img {
   background-color: {$color_95} !important;
 }
 

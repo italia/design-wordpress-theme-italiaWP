@@ -63,6 +63,15 @@ function italiawp_customize_register($wp_customize) {
         'type' => 'checkbox', 'section' => 'site_settings', 'settings' => 'active_section_last_news'
     ));
     
+/* Gallerie Fotografiche */
+    $wp_customize->add_setting('active_section_galleries', array(
+        'default' => false, 'capability' => 'edit_theme_options', 'sanitize_callback' => 'italiawp_sanitize_checkbox'
+    ));
+    $wp_customize->add_control('active_section_galleries', array(
+        'label' => 'Gallerie fotografiche',
+        'type' => 'checkbox', 'section' => 'site_settings', 'settings' => 'active_section_galleries'
+    ));
+    
 /* Utilità */
     $wp_customize->add_setting('active_section_utilities', array(
         'default' => false, 'capability' => 'edit_theme_options', 'sanitize_callback' => 'italiawp_sanitize_checkbox'

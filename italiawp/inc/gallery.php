@@ -13,9 +13,14 @@ function italiawp_custom_gallery( $output = '', $atts, $instance ) {
 
     $col_class = 'Grid-cell usizefull u-md-size1of3 u-lg-size1of3 u-text-r-m u-margin-r-bottom';
     if ($columns == 1) { $col_class = 'Grid-cell usizefull u-md-size1of1 u-lg-size1of1 u-text-r-m u-margin-r-bottom';}
-    else if ($columns == 2) { $col_class = 'Grid-cell usizefull u-md-size1of2 u-lg-size1of2 u-text-r-m u-margin-r-bottom'; }
+    else if ($columns == 2) { $col_class = 'Grid-cell usizefull u-sm-size1of2 u-md-size1of2 u-lg-size1of2 u-text-r-m u-margin-r-bottom'; }
+    else if ($columns == 4) { $col_class = 'Grid-cell usizefull u-sm-size1of2 u-md-size1of4 u-lg-size1of4 u-text-r-m u-margin-r-bottom'; }
+    else if ($columns == 5) { $col_class = 'Grid-cell usizefull u-sm-size1of2 u-md-size1of5 u-lg-size1of5 u-text-r-m u-margin-r-bottom'; }
+    else if ($columns == 6 || $columns == 7 || $columns == 8 || $columns == 9) {
+        $col_class = 'Grid-cell usizefull u-sm-size1of2 u-md-size1of6 u-lg-size1of6 u-text-r-m u-margin-r-bottom';
+    }
 
-    $return = '<section class="u-layout-medium u-margin-r-top">
+    $return = '<section class="u-layout-wide u-layout-r-withGutterM u-margin-r-top">
                     <div class="u-layout-centerLeft">
                         <h2 class="u-text-r-l">Galleria Fotografica</h2>
                     </div>';

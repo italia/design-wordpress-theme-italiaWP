@@ -13,16 +13,21 @@
             </li>
 
         <?php for($j=1; $j<=$wp_query->max_num_pages; $j++) { ?>
-
                 <?php if($j != $paged) {
                     $search = "";
                     if(is_home()) $link = get_permalink( get_option( 'page_for_posts' ) );
                     else if(is_search()) {
                         $link = get_bloginfo('url').'/';
                         $search = "/?s=".get_search_query();
+                    }else if(is_post_type_archive()) {
+                        $cpt = get_post_type($post);
+                        $link = get_bloginfo('url').'/'.$cpt.'/';
                     }else {
-                        $obj_id = get_queried_object_id();
-                        $link = get_term_link( $obj_id );
+                        $link = str_replace(get_bloginfo('url'),"",current_url());
+                        if (strpos($link,'page/') !== false) {
+                            $link = substr($link, 0, strpos($link, 'page/'));
+                        }
+                        $link = get_bloginfo('url').$link;
                     } ?>
             <li class="Grid-cell u-textCenter u-hidden u-md-inlineBlock u-lg-inlineBlock">
                 <a href="<?php echo $link; ?>page/<?php echo $j; if(is_search()) echo $search; ?>" aria-label="Pagina <?php echo $j; ?>" class="u-padding-r-all u-color-50 u-textClean u-block">

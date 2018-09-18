@@ -270,3 +270,26 @@ function italiawp_register_required_plugins() {
     );
     tgmpa($plugins, $config);
 }
+
+require get_template_directory() . '/inc/gallery_cpt.php';
+
+function current_url() {
+    $url = "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+    $validURL = str_replace("&", "&amp", $url);
+    return $validURL;
+}
+
+function is_custom_post_type($post = NULL) {
+    $all_custom_post_types = get_post_types(array('_builtin' => FALSE));
+
+    if (empty($all_custom_post_types))
+        return FALSE;
+
+    $custom_types = array_keys($all_custom_post_types);
+    $current_post_type = get_post_type($post);
+
+    if (!$current_post_type)
+        return FALSE;
+
+    return in_array($current_post_type, $custom_types);
+}

@@ -56,16 +56,6 @@
     
     <script src="<?php bloginfo('template_url'); ?>/webtoolkit/jquery.min.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/inc/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125634207-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'GA_TRACKING_ID', {'anonymize_ip': true});
-      gtag('config', 'UA-125634207-1');
-    </script>
 	
 </head>
 
@@ -216,5 +206,7 @@
             get_template_part('template-parts/section-last-one-news');
         if (get_theme_mod('active_section_last_news'))
             get_template_part('template-parts/section-last-news');
+        if (get_theme_mod('active_section_galleries'))
+            get_template_part('template-parts/section-gallery');
         
     } ?>

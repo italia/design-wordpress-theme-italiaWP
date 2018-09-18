@@ -16,7 +16,7 @@
     $published_post = $total_post->publish;
     $total_pages = ceil( $published_post / $posts_per_page ); ?>
     
-                <h2 class="u-padding-r-bottom u-padding-r-top u-text-r-l"><?php the_archive_title('',''); ?><?php //echo get_search_query(); ?><br>
+                <h2 class="u-padding-r-bottom u-padding-r-top u-text-r-l"><?php the_archive_title('',''); ?><br>
                     <?php if($wp_query->max_num_pages != 0) { ?>
                     <small>Pagina <?php echo $paged; ?> di <?php echo $wp_query->max_num_pages; ?></small>
                     <?php } ?>

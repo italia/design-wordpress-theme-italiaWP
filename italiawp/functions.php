@@ -85,6 +85,12 @@ register_default_headers(array(
     )
 ));
 
+add_filter('next_posts_link_attributes', 'posts_link_attributes');
+add_filter('previous_posts_link_attributes', 'posts_link_attributes');
+function posts_link_attributes() {
+    return 'class="u-color-50"';
+}
+
 require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/style.php';
 require get_template_directory() . '/inc/gallery.php';
@@ -173,7 +179,7 @@ function italiawp_create_breadcrumbs() {
         if (get_query_var('paged')) {
             if (is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author())
                 echo '<li class="Breadcrumb-item"> (';
-            echo 'Pagina' . ' ' . get_query_var('paged');
+            echo ' Pagina' . ' ' . get_query_var('paged');
             if (is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author())
                 echo ') </li>';
         }

@@ -12,7 +12,15 @@
                 <?php echo get_previous_posts_link( '<span class="Icon-chevron-left u-text-r-s" role="presentation"></span><span class="u-hiddenVisually">Pagina precedente</span>' ); ?>
             </li>
 
-        <?php for($j=1; $j<=$wp_query->max_num_pages; $j++) { ?>
+        <?php 
+            if($paged<=4) {
+                $jmin = 1; $jmax = 7;
+            }else{
+                $jmin = $paged - 3; $jmax = $paged + 3;
+            }
+            if($jmax > $wp_query->max_num_pages) $jmax = $wp_query->max_num_pages;
+
+              for($j=$jmin; $j<=$wp_query->max_num_pages && $j<=$jmax; $j++) { ?>
                 <?php if($j != $paged) {
                     $search = "";
                     if(is_home()) $link = get_permalink( get_option( 'page_for_posts' ) );

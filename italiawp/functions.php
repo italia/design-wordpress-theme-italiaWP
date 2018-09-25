@@ -43,10 +43,8 @@ function italiawp_custom_classes_menu_utilita( $classes, $item, $args ) {
 add_filter( 'nav_menu_css_class', 'italiawp_custom_classes_menu_utilita', 10, 3 );
 
 function italiawp_custom_login_logo() {
-    $custom_logo_id = get_theme_mod( 'custom_logo' );
-    $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
     echo '<style type="text/css">';
-    echo '.login h1 a { background-image:url('.esc_url($logo[0]).') !important; }';
+    echo '.login h1 a { background-image:url('.esc_url(get_site_icon_url()).') !important; }';
     echo '</style>';
 }
 add_action('login_head', 'italiawp_custom_login_logo');

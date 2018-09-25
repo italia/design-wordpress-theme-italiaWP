@@ -18,6 +18,8 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
         <div class="Grid-cell u-md-size8of12 u-lg-size8of12">
             <div class="Prose u-layout-prose">
                 <?php the_content(); ?>
+                <?php if (get_theme_mod('active_allegati_contenuto'))
+                        get_template_part('template-parts/attachments'); ?>
             </div>
         </div>
 
@@ -124,7 +126,8 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
 
             </div>
 
-            <?php get_template_part('template-parts/attachments'); ?>
+            <?php if (!get_theme_mod('active_allegati_contenuto'))
+                    get_template_part('template-parts/attachments'); ?>
             
             <a href="#" title="torna all'inizio del contenuto" class="u-hiddenVisually">torna all'inizio del contenuto</a>
         </div>

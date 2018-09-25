@@ -80,6 +80,21 @@ function italiawp_customize_register($wp_customize) {
         'label' => 'Utilità',
         'type' => 'checkbox', 'section' => 'site_settings', 'settings' => 'active_section_utilities'
     ));
+
+/* Sezione "Preferenze Pagine" nel customizer */
+    $wp_customize->add_section('pages_settings', array(
+        'title' => 'Preferenze Pagine',
+        'priority' => 2,
+    ));
+    
+/* Lista Allegati in Contenuto o Sidebar */
+    $wp_customize->add_setting('active_allegati_contenuto', array(
+        'default' => false, 'capability' => 'edit_theme_options', 'sanitize_callback' => 'italiawp_sanitize_checkbox'
+    ));
+    $wp_customize->add_control('active_allegati_contenuto', array(
+        'label' => 'Lista allegati in Contenuto (in Sidebar se disattivato)',
+        'type' => 'checkbox', 'section' => 'pages_settings', 'settings' => 'active_allegati_contenuto'
+    ));
     
 /* Colore Principale */
     $wp_customize->add_setting('italiawp_main_color', array(

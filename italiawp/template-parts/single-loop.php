@@ -38,6 +38,8 @@ if (have_posts()) : while (have_posts()) : the_post();
                 </h2>
                 <p class="u-textSecondary u-lineHeight-l">
                     <?php the_content(); ?>
+                    <?php if (get_theme_mod('active_allegati_contenuto'))
+                        get_template_part('template-parts/attachments'); ?>
                 </p>
             </div>
         </div>
@@ -47,7 +49,8 @@ if (have_posts()) : while (have_posts()) : the_post();
                 <img src="<?php echo $link_img_url; ?>" class="u-sizeFull" alt="<?php the_title(); ?>">
             </div>
             
-            <?php get_template_part('template-parts/attachments'); ?>
+            <?php if (!get_theme_mod('active_allegati_contenuto'))
+                    get_template_part('template-parts/attachments'); ?>
         </div>
     
         <?php

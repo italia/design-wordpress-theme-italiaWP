@@ -83,7 +83,7 @@ function italiawp_customize_register($wp_customize) {
 
 /* Sezione "Preferenze Pagine" nel customizer */
     $wp_customize->add_section('pages_settings', array(
-        'title' => 'Preferenze Pagine',
+        'title' => 'Preferenze Pagine & Articoli',
         'priority' => 2,
     ));
     

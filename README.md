@@ -34,7 +34,8 @@ _[ Testato su: **WordPress 4.9.8** | **PHP 5.6.37** ]_
 3. Assegnare le pagine appena create rispettivamente ad "Homepage" e "Pagina articoli"
 4. Impostare i dati di contatto e i dettagli nella sezione _"Dettagli"_
 5. Attivare le sezioni della "Home" in _"Aspetto" > "Personalizza"_ > _"Sito & Homepage"_
-6. [Facoltativo] Installare i Plugins consigliati in _"Aspetto" > "Plugin richiesti"_
+6. In _"Aspetto" > "Menu"_ Creare un nuovo Menu ed inserirlo nella posizione "Menu Principale"
+7. [Facoltativo] Installare (e poi attivare) i Plugins consigliati in _"Aspetto" > "Plugin richiesti"_
 
 ---
 

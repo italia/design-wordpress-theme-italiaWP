@@ -8,8 +8,8 @@
  */
 ?>
 
-<div class="u-layout-wide u-layoutCenter u-text-r-xl u-layout-r-withGutter u-padding-r-top">
-    <div class="Grid Grid--equalHeight Grid--withGutterM" id="links">
+<div class="u-layout-wide u-layoutCenter u-text-r-xl u-layout-r-withGutter u-padding-r-top section">
+    <div class="Grid Grid--equalHeight Grid--withGutterM">
 
         <div class="Grid-cell u-sizeFull u-sm-size1of2 u-md-size1of3 u-lg-size1of3 u-margin-r-bottom">
             <?php if(has_nav_menu('menu-links-1')) { ?>
@@ -69,8 +69,8 @@
 
     </div>
     
-    <a href="#news" class="Forward Forward--floating js-scrollTo u-color-70" aria-hidden="true">
+    <div class="Forward Forward--floating u-color-70" aria-hidden="true">
         <span class="Icon Icon-expand"></span>
-    </a>
+    </div>
     
 </div>

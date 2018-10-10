@@ -156,3 +156,7 @@ button.mfp-close {
 .mfp-arrow-left:before, .mfp-arrow-right:before {
     border: none !important;
 }
+
+.Forward {
+    cursor: pointer;
+}

@@ -7,7 +7,7 @@
  */
 ?>
 
-<div class="u-background-grey-20 u-text-r-xxl u-padding-r-top u-padding-r-bottom">
+<div class="u-background-grey-20 u-text-r-xxl u-padding-r-top u-padding-r-bottom section">
     <div class="u-layout-wide u-layoutCenter u-layout-r-withGutter">
         <div class="u-layout-centerContent u-background-grey-20 u-padding-r-bottom">
             <section class="u-layout-wide">

@@ -7,11 +7,11 @@
  */
 ?>
 
-<div class="u-background-compl-10 u-layout-centerContent u-padding-r-top">
+<div class="u-background-compl-10 u-layout-centerContent u-padding-r-top section">
 
     <section class="u-layout-wide u-layout-r-withGutter u-text-r-s u-padding-r-top u-padding-r-bottom">
 
-        <h2 id="news" class="u-layout-centerLeft u-text-r-s">
+        <h2 class="u-layout-centerLeft u-text-r-s">
             <a class="u-color-50 u-textClean u-text-h3 " href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>">Ultimi articoli</a>
         </h2>
 
@@ -66,8 +66,8 @@ if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->t
 
     </section>
 
-    <a href="#utilita" class="Forward Forward--floating js-scrollTo" aria-hidden="true">
+    <div class="Forward Forward--floating" aria-hidden="true">
         <span class="Icon Icon-expand u-color-grey-40"></span>
-    </a>
+    </div>
 
 </div>

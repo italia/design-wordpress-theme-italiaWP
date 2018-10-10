@@ -6,7 +6,7 @@
  */
 ?>
 
-<div class="u-layout-centerContent u-background-grey-20 u-padding-r-top">
+<div class="u-layout-centerContent u-background-grey-20 u-padding-r-top section">
     
     <section class="u-layout-wide u-layout-r-withGutter u-text-r-s u-padding-r-top u-padding-r-bottom">
         
@@ -73,8 +73,8 @@ if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->t
         
     </section>
     
-    <a href="#utilita" class="Forward Forward--floating js-scrollTo" aria-hidden="true">
+    <div class="Forward Forward--floating" aria-hidden="true">
         <span class="Icon Icon-expand u-color-grey-40"></span>
-    </a>
+    </div>
     
 </div>

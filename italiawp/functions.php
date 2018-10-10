@@ -35,7 +35,6 @@ register_nav_menus( array(
 
 function italiawp_custom_classes_menu_utilita( $classes, $item, $args ) {
     if ( 'menu-utilita' === $args->theme_location ) {
-        $classes = "";
         $classes[] = 'Grid-cell u-sizeFull u-sm-size1of2 u-md-size1of4 u-lg-size1of4';
     }
     return $classes;

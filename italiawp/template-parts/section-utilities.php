@@ -6,8 +6,8 @@
  */
 ?>
 
-<div class="u-background-white u-color-black u-text-xxl"><!--u-padding-r-top u-padding-r-bottom-->
-    <div class="u-layout-wide u-layoutCenter u-layout-r-withGutter" id="utilita">
+<div class="u-background-white u-color-black u-text-xxl section">
+    <div class="u-layout-wide u-layoutCenter u-layout-r-withGutter section">
         <section class="u-padding-r-top u-padding-r-bottom">
             <h2 class="u-text-h3 u-layout-centerLeft">Utilità</h2>
             
@@ -28,4 +28,11 @@
              ?>
         </section>
     </div>
+    
+    <?php if (is_front_page()) { ?>
+    <div class="Forward Forward--floating u-color-70" aria-hidden="true">
+        <span class="Icon Icon-expand"></span>
+    </div>
+    <?php } ?>
+    
 </div>

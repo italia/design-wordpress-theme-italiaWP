@@ -56,7 +56,6 @@
     
     <script src="<?php bloginfo('template_url'); ?>/webtoolkit/jquery.min.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/inc/magnific-popup/jquery.magnific-popup.min.js"></script>
-	
 </head>
 
 <body class="t-Pac">
@@ -83,11 +82,13 @@
     <header class="Header u-hiddenPrint">    
     <?php } ?>
 
+        <?php if(get_option('dettagli-nome-ammin-afferente')!="") { ?>
         <div class="Header-banner ">
             <div class="Header-owner Headroom-hideme ">
                 <a href="<?php echo get_option('dettagli-url-ammin-afferente'); ?>"><span><?php echo get_option('dettagli-nome-ammin-afferente'); ?></span></a>
             </div>
         </div>
+        <?php } ?>
 
         <div class="Header-navbar ">
             <div class="u-layout-wide Grid Grid--alignMiddle u-layoutCenter">

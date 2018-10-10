@@ -82,7 +82,7 @@ function italiawp_edit_custom_settings() { ?>
             <p><strong>Google Maps iframe SRC (URL intero con HTTP o HTTPS):</strong><br />
                 <input type="text" name="dettagli-map" size="100" value="<?php echo get_option('dettagli-map'); ?>" /></p>
 
-            <p><input type="submit" name="Submit" value="SALVA" /></p>
+            <p><input type="submit" class="button button-primary" name="Submit" value="SALVA" /></p>
 
             <input type="hidden" name="action" value="update" />
             <input type="hidden" name="page_options" value="dettagli-num-articoli,

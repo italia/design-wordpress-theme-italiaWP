@@ -7,9 +7,9 @@
  */
 ?>
 
-<div class="u-layout-wide u-layoutCenter u-text-r-xl u-layout-r-withGutter u-padding-r-top">
+<div class="u-layout-wide u-layoutCenter u-text-r-xl u-layout-r-withGutter u-padding-r-top section">
     
-    <div class="Grid Grid--withGutter" id="servizi">
+    <div class="Grid Grid--withGutter">
         <div class="Grid-cell u-sizeFull u-padding-r-top u-padding-r-bottom">
             <h2 class="u-text-h2"><a class="u-color-black u-textClean u-text-h2" href="">Servizi</a></h2>
         </div>
@@ -136,8 +136,8 @@
                 } ?>
     </div>
 
-    <a href="#links" class="Forward Forward--floating js-scrollTo u-margin-top-s u-color-70" aria-hidden="true">
+    <div class="Forward Forward--floating u-margin-top-s u-color-70" aria-hidden="true">
         <span class="Icon Icon-expand"></span>
-    </a>
+    </div>
 
 </div>

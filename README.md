@@ -45,7 +45,7 @@ _[ Testato su: **WordPress 4.9.8** | **PHP 5.6.37** ]_
 * **Responsive**: si adatta ad _ogni tipo di dispositivo_ (desktop, tablet e mobile) mantenendo le funzionalità
 * Pagina **"DETTAGLI"** nel backend: è possibile inserire e modificare facilmente le _informazioni di contatto_, i _link dei profili social_, il numero di _ultimi articoli_ in homepage e gli _ID delle pagine_ Privacy, Note legali e Contatti
 * **14 posizioni del menu**: _menu principale_, _menu utilità_, 9 per i _box servizi_ (divisi in 3 tipologie), 3 per i _links_
-* **Area widget**: per le colonne previste nel _footer_
+* **3 aree widget**: per le colonne previste nel _footer_, per _pagine_ e _articoli_
 * **Logo, titolo e descrizione**: personalizzazione del _logo_, del _titolo_, della _denominazione_ e dell'_icona_ del sito direttamente dalla personalizzazione del tema
 * **Immagini** e **Gallerie Fotografiche**: ritaglio e sistemazione automatica delle _immagini principali_ degli articoli, gestione grafica secondo le linee guida delle _singole immagini_ e _gallerie_ caricate negli articoli o nella pagine. Gestione di Gallerie Fotografiche esterne tramite _Custom Post Type_
 * **Liste Allegati**: gestione degli allegati (e relative liste) tramite _Plugin esterno_ di cui si richiede l'installazione al momento dell'attivazione del tema

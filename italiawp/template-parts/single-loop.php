@@ -49,6 +49,8 @@ if (have_posts()) : while (have_posts()) : the_post();
                 <img src="<?php echo $link_img_url; ?>" class="u-sizeFull" alt="<?php the_title(); ?>">
             </div>
             
+            <?php get_template_part('template-parts/sidebar-single'); ?>
+            
             <?php if (!get_theme_mod('active_allegati_contenuto'))
                     get_template_part('template-parts/attachments'); ?>
         </div>

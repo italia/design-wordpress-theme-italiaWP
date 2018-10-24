@@ -23,7 +23,7 @@ if (is_plugin_active('attachments/index.php')) { ?>
                 <li><span class="Linklist-link Linklist-link--lev1">Allegati (<?php echo $attachments->total(); ?>)</span></li>
 
                 <?php while ($attachments->get()) : ?>
-                    <li><a class="Linklist-link Linklist-link--lev3" target="_blank" href="<?php echo $attachments->url(); ?>"><?php echo $attachments->field('title'); ?> [<?php echo $attachments->filesize(); ?>]</a></li>
+                    <li><a class="Linklist-link Linklist-link--lev2" target="_blank" href="<?php echo $attachments->url(); ?>"><?php echo $attachments->field('title'); ?> [<?php echo $attachments->filesize(); ?>]</a></li>
                     <?php endwhile; ?>
             </ul>
         <?php endif; ?>

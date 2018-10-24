@@ -7,6 +7,9 @@ $(document).ready(function () {
     $(".box-servizi a").addClass("u-textClean u-text-h3 u-color-white");
     $(".form-submit > input").addClass("Button Button--default u-text-xs");
     $(".comment-respond").addClass("Form Form--spaced u-padding-all-xl u-background-grey-10 u-text-r-xs u-layout-prose");
+    $(".italiawp-sidebar > ul").addClass("Linklist Linklist--padded u-layout-prose u-text-r-xs");
+    $(".italiawp-sidebar > ul > li > a").addClass("Linklist-link Linklist-link--lev2");
+    $(".italiawp-sidebar > ul > li > ul > li a").addClass("Linklist-link Linklist-link--lev3");
     
     mapWrap();
 

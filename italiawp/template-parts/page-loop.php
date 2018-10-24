@@ -125,6 +125,8 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
                 </ul>
 
             </div>
+            
+            <?php get_template_part('template-parts/sidebar-page'); ?>
 
             <?php if (!get_theme_mod('active_allegati_contenuto'))
                     get_template_part('template-parts/attachments'); ?>

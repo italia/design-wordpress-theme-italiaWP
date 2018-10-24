@@ -58,6 +58,26 @@ function italiawp_widgets_init() {
         'before_title'  => '<h2 class="Footer-blockTitle">',
         'after_title'   => '</h2>'
     ));
+    register_sidebar( array(
+        'name'          => 'Sidebar Pagine',
+        'id'            => 'sidebar-pagine',
+        'description'   => 'Sidebar nelle Pagine',
+        'before_widget' => '<div class="u-margin-r-top"></div>',
+        'after_widget'  => '',
+        'before_title'  => '<ul class="Linklist Linklist--padded u-layout-prose u-text-r-xs"><li><span class="Linklist-link Linklist-link--lev1">',
+        'after_title'   => '</span></li></ul>',
+        'class'         => 'Linklist-link Linklist-link--lev3'
+    ));
+    register_sidebar( array(
+        'name'          => 'Sidebar Articoli',
+        'id'            => 'sidebar-articoli',
+        'description'   => 'Sidebar negli Articoli',
+        'before_widget' => '<div class="u-margin-r-top"></div>',
+        'after_widget'  => '',
+        'before_title'  => '<ul class="Linklist Linklist--padded u-layout-prose u-text-r-xs"><li><span class="Linklist-link Linklist-link--lev1">',
+        'after_title'   => '</span></li></ul>',
+        'class'         => 'Linklist-link Linklist-link--lev3'
+    ));
 }
 add_action( 'widgets_init', 'italiawp_widgets_init' );
 

@@ -11,7 +11,7 @@
 
     <section class="u-layout-wide u-layout-r-withGutter u-text-r-s u-padding-r-top u-padding-r-bottom">
 
-        <h2 class="u-layout-centerLeft u-text-r-s">
+        <h2 id="news" class="u-layout-centerLeft u-text-r-s">
             <a class="u-color-50 u-textClean u-text-h3 " href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>">Ultimi articoli</a>
         </h2>
 

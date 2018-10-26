@@ -140,18 +140,18 @@ function italiawp_custom_images($content) {
         if ( strpos($class, 'in-gallery') == false ) {
             $src = $xpath->evaluate("string(//img/@src)");
             $attachment_id = get_attachment_id($src);
-            $content = str_replace($image, italiawp_custom_image_tag($image, $attachment_id), $content);
+            $content = str_replace($image, italiawp_custom_image_tag($src, $attachment_id), $content);
         }
     }
 
     return $content;
 }
 
-function italiawp_custom_image_tag($image, $attachment_id) {
+function italiawp_custom_image_tag($src, $attachment_id) {
     $attachment_meta = wp_get_attachment($attachment_id);
 
     $imgCaption = $attachment_meta['caption'];
-    $imgSrc = $attachment_meta['src'];
+    $imgSrc = $src;
     $imgTitle = $attachment_meta['title'];
     $imgDate = $attachment_meta['date'];
     $imgAlt = $attachment_meta['alt'];

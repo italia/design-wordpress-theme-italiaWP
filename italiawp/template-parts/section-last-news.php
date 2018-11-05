@@ -29,8 +29,6 @@ if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->t
         $img_url = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'news-image');
         if ($img_url != "") {
             $img_url = $img_url[0];
-        } else {
-            $img_url = get_bloginfo('template_url') . "/images/400x220.png";
         }
 
         $category = get_the_category(); $first_category = $category[0];
@@ -38,9 +36,11 @@ if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->t
 
             <div class="Grid-cell u-sm-size1of3 u-md-size1of3 u-lg-size1of3 u-flex u-margin-r-bottom u-flexJustifyCenter">
                 <div class="card-news u-nbfc u-borderShadow-xxs u-borderRadius-m u-color-grey-30 u-background-white">
+                    <?php if($img_url!="") { ?>
                     <a href="<?php the_permalink(); ?>">
                         <img src="<?php print $img_url; ?>" class="u-sizeFull" alt="<?php the_title(); ?>">
                     </a>
+                    <?php } ?>
                     <div class="u-text-r-l u-padding-r-all u-layout-prose">
                         <p class="u-text-h6 u-margin-bottom-l"><a class="u-color-50 u-textClean" href="<?php echo get_category_link($first_category); ?>"><?php echo $first_category->name; ?></a>
                         <span class="u-text-r-xxs u-textSecondary u-textWeight-400 u-lineHeight-xl u-cf"><?php echo $datapost; ?></span></p>

@@ -28,8 +28,6 @@ if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->t
         $img_url = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'news-image');
         if ($img_url != "") {
             $img_url = $img_url[0];
-        } else {
-            $img_url = get_bloginfo('template_url') . "/images/400x220.png";
         }
 
         $category = get_the_category(); $first_category = $category[0];
@@ -54,9 +52,11 @@ if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->t
             </div>
 
             <div class="Grid-cell u-sizeFull u-md-size1of2 u-lg-size1of2 u-text-r-s u-padding-r-all">
+                <?php if($img_url!="") { ?>
                 <a href="<?php the_permalink(); ?>">
-                <img src="<?php print $img_url; ?>" class="u-sizeFull" alt="<?php the_title(); ?>" />
+                    <img src="<?php print $img_url; ?>" class="u-sizeFull" alt="<?php the_title(); ?>" />
                 </a>
+                <?php } ?>
             </div>
 
         </div>

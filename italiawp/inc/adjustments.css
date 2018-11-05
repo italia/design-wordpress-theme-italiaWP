@@ -5,9 +5,10 @@
     .box-servizi {
         margin-bottom: .8rem !important;
     }
-    .card-news {
-        width: 100%;
-    }
+}
+
+.card-news {
+    width: 100%;
 }
 
 @media (max-width: 991px) {

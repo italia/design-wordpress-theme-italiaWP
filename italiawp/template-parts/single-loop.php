@@ -11,7 +11,9 @@ if (have_posts()) : while (have_posts()) : the_post();
 
     $img_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'news-image' );
     if($img_url!="") {
-        $link_img_url = $img_url[0];
+        $img_url = $img_url[0];
+    }else if(get_theme_mod('active_immagine_evidenza_default')) {	
+        $img_url = get_bloginfo('template_url') . "/images/400x220.png";	
     }
     
     $category = get_the_category(); $first_category = $category[0];
@@ -45,7 +47,7 @@ if (have_posts()) : while (have_posts()) : the_post();
         <div class="Grid-cell u-sizeFull u-md-size1of2 u-lg-size1of2 u-text-r-s u-padding-r-all">
             <?php if($img_url!="") { ?>
             <div class="u-sizeFull u-md-size11of12 u-lg-size11of12">
-                <img src="<?php echo $link_img_url; ?>" class="u-sizeFull" alt="<?php the_title(); ?>">
+                <img src="<?php echo $img_url; ?>" class="u-sizeFull" alt="<?php the_title(); ?>">
             </div>
             <?php } ?>
             

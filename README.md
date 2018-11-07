@@ -25,6 +25,11 @@
 
 _[ Testato su: **WordPress 4.9.8** | **PHP 5.6.37** ]_
 
+## In caso di utilizzo del _Tema Child_:
+
+Ripetere la procedura precedente ma con il file [.zip](https://raw.githubusercontent.com/italia/design-wordpress-theme-wt/master/italiawp-child.zip)
+del _Tema Child_, successivamente configurare il _Tema Child_ lasciando _ItaliaWP_ con la configurazione iniziale.
+
 ---
 
 ## Configurare _ItaliaWP_:
@@ -51,7 +56,7 @@ _[ Testato su: **WordPress 4.9.8** | **PHP 5.6.37** ]_
 * **Liste Allegati**: gestione degli allegati (e relative liste) tramite _Plugin esterno_ di cui si richiede l'installazione al momento dell'attivazione del tema
 * Integrazione con il **Customizer (Pesonalizza)** di Wordpress:
     * Sezione **"Sito & Homepage"** consente di fissare o no il _menu principale_ e di attivare o disattivare le varie _sezioni_ in home page
-    * Sezione **"Preferenze Pagine & Articoli"** consente di decidere dove posizionare la _lista degli allegati_ presente in pagine o articoli (lateralmente nella sidebar o subito dopo il contenuto)
+    * Sezione **"Preferenze Pagine & Articoli"** consente di decidere dove posizionare la _lista degli allegati_ presente in pagine o articoli (lateralmente nella sidebar o subito dopo il contenuto), consente di attivare l'_immagine in evidenza_ di _default_ (per gli articoli che non ne hanno una)
     * Sezione **"Colori"** consente di impostare il _colore principale_ del sito, le varianti e i colori secondati previsti dalle linee guida saranno generate dinamicamente in automatico
     * Sezione **"Immagine dell'header"** consente di impostare l'_immagine di copertina_ dell'homepage
     * Sezione **"Menu"** consente di creare, gestire e posizionare i _menu personalizzati_ nelle posizioni previste

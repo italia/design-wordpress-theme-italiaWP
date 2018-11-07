@@ -96,6 +96,15 @@ function italiawp_customize_register($wp_customize) {
         'type' => 'checkbox', 'section' => 'pages_settings', 'settings' => 'active_allegati_contenuto'
     ));
     
+/* Immagine in evidenza di default per gli articoli */
+    $wp_customize->add_setting('active_immagine_evidenza_default', array(
+        'default' => false, 'capability' => 'edit_theme_options', 'sanitize_callback' => 'italiawp_sanitize_checkbox'
+    ));
+    $wp_customize->add_control('active_immagine_evidenza_default', array(
+        'label' => 'Attiva l\'immagine in evidenza di default (per gli articoli che non ne hanno una)',
+        'type' => 'checkbox', 'section' => 'pages_settings', 'settings' => 'active_immagine_evidenza_default'
+    ));
+    
 /* Colore Principale */
     $wp_customize->add_setting('italiawp_main_color', array(
         'default' => '#06c',

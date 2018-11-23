@@ -50,13 +50,13 @@ del _Tema Child_, successivamente configurare il _Tema Child_ lasciando _ItaliaW
 * **Responsive**: si adatta ad _ogni tipo di dispositivo_ (desktop, tablet e mobile) mantenendo le funzionalità
 * Pagina **"DETTAGLI"** nel backend: è possibile inserire e modificare facilmente le _informazioni di contatto_, i _link dei profili social_, il numero di _ultimi articoli_ in homepage e gli _ID delle pagine_ Privacy, Note legali e Contatti
 * **14 posizioni del menu**: _menu principale_, _menu utilità_, 9 per i _box servizi_ (divisi in 3 tipologie), 3 per i _links_
-* **3 aree widget**: per le colonne previste nel _footer_, per _pagine_ e _articoli_
+* **3 aree widget**: per le colonne previste nel _footer_, _sidebar_ per le _pagine_ (disattivabile scegliendo l'appostito _Template_) e per gli _articoli_
 * **Logo, titolo e descrizione**: personalizzazione del _logo_, del _titolo_, della _denominazione_ e dell'_icona_ del sito direttamente dalla personalizzazione del tema
-* **Immagini** e **Gallerie Fotografiche**: ritaglio e sistemazione automatica delle _immagini principali_ degli articoli, gestione grafica secondo le linee guida delle _singole immagini_ e _gallerie_ caricate negli articoli o nella pagine. Gestione di Gallerie Fotografiche esterne tramite _Custom Post Type_
+* **Immagini** e **Gallerie Fotografiche**: ritaglio e sistemazione automatica delle _immagini principali_ degli articoli, gestione grafica secondo le linee guida delle _singole immagini_ (disattivabile) e _gallerie_ caricate negli articoli o nella pagine. Gestione di Gallerie Fotografiche esterne tramite _Custom Post Type_
 * **Liste Allegati**: gestione degli allegati (e relative liste) tramite _Plugin esterno_ di cui si richiede l'installazione al momento dell'attivazione del tema
 * Integrazione con il **Customizer (Pesonalizza)** di Wordpress:
     * Sezione **"Sito & Homepage"** consente di fissare o no il _menu principale_ e di attivare o disattivare le varie _sezioni_ in home page
-    * Sezione **"Preferenze Pagine & Articoli"** consente di decidere dove posizionare la _lista degli allegati_ presente in pagine o articoli (lateralmente nella sidebar o subito dopo il contenuto), consente di attivare l'_immagine in evidenza_ di _default_ (per gli articoli che non ne hanno una)
+    * Sezione **"Preferenze Pagine & Articoli"** consente di decidere dove posizionare la _lista degli allegati_ presente in pagine o articoli (lateralmente nella sidebar o subito dopo il contenuto), consente di attivare l'_immagine in evidenza_ di _default_ (per gli articoli che non ne hanno una), consente di disattivare gli _stili grafici AGID_ per le immagini "singole"
     * Sezione **"Colori"** consente di impostare il _colore principale_ del sito, le varianti e i colori secondati previsti dalle linee guida saranno generate dinamicamente in automatico
     * Sezione **"Immagine dell'header"** consente di impostare l'_immagine di copertina_ dell'homepage
     * Sezione **"Menu"** consente di creare, gestire e posizionare i _menu personalizzati_ nelle posizioni previste

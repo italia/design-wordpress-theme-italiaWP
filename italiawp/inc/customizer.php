@@ -105,6 +105,15 @@ function italiawp_customize_register($wp_customize) {
         'type' => 'checkbox', 'section' => 'pages_settings', 'settings' => 'active_immagine_evidenza_default'
     ));
     
+/* Stile AGID per le Immagini singole in pagine e articoli */
+    $wp_customize->add_setting('disactive_stili_immagini_agid', array(
+        'default' => false, 'capability' => 'edit_theme_options', 'sanitize_callback' => 'italiawp_sanitize_checkbox'
+    ));
+    $wp_customize->add_control('disactive_stili_immagini_agid', array(
+        'label' => 'Disattiva gli stili delle Linee Guida AGID per le immagini singole (non gallerie) in pagine e articoli',
+        'type' => 'checkbox', 'section' => 'pages_settings', 'settings' => 'disactive_stili_immagini_agid'
+    ));
+    
 /* Colore Principale */
     $wp_customize->add_setting('italiawp_main_color', array(
         'default' => '#06c',

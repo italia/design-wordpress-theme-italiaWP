@@ -4,12 +4,12 @@
 
 function italiawp_custom_gallery( $output = '', $atts, $instance ) {
     $atts = array_merge(array('columns' => 3), $atts);
-
     $columns = $atts['columns'];
     $link = $atts['link'];
     $size = $atts['size'];
     
-    $images = explode(',', $atts['ids']);
+    if(is_array($atts['ids'])) $images = $atts['ids'];
+    else $images = explode(',', $atts['ids']);
 
     $col_class = 'Grid-cell usizefull u-md-size1of3 u-lg-size1of3 u-text-r-m u-margin-r-bottom';
     if ($columns == 1) { $col_class = 'Grid-cell usizefull u-md-size1of1 u-lg-size1of1 u-text-r-m u-margin-r-bottom';}
@@ -20,10 +20,14 @@ function italiawp_custom_gallery( $output = '', $atts, $instance ) {
         $col_class = 'Grid-cell usizefull u-sm-size1of2 u-md-size1of6 u-lg-size1of6 u-text-r-m u-margin-r-bottom';
     }
 
-    $return = '<section class="u-layout-wide u-layout-r-withGutterM u-margin-r-top">
-                    <div class="u-layout-centerLeft">
-                        <h2 class="u-text-r-l">Galleria Fotografica</h2>
-                    </div>';
+    if(!is_array($atts['ids'])) {
+        $return = '<section class="u-layout-wide u-layout-r-withGutterM u-margin-r-top">
+                        <div class="u-layout-centerLeft">
+                            <h2 class="u-text-r-l">Galleria Fotografica</h2>
+                        </div>';
+    }else{
+        $return = '<section class="u-layout-wide u-layout-r-withGutterM">';
+    }
     
     $return .= '<div class="Grid Grid--withGutter u-padding-r-top u-text-r-xxl">';
     $i = 0;

@@ -43,6 +43,12 @@ $(document).ready(function () {
         }
         return false;
     });
+    
+    $.each($("ul#primary-menu > li"), function (index, obj) {
+        if ($(obj).has("ul").length) {
+            $(obj).has("ul").find("a:first").removeAttr("href");
+        }
+    });
 });
 
 $(window).load(function() {

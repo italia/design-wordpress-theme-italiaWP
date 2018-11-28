@@ -15,8 +15,8 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
     
     <section class="Grid Grid--withGutter">
 
-        <div class="Grid-cell u-md-size8of12 u-lg-size8of12">
-            <div class="Prose u-layout-prose">
+        <div class="Grid-cell u-md-sizeFull u-lg-sizeFull">
+            <div class="Prose u-layout-wide">
                 <?php the_content(); ?>
                 <?php if (get_theme_mod('active_allegati_contenuto'))
                         get_template_part('template-parts/attachments'); ?>

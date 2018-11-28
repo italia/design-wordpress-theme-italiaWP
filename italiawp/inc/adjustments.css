@@ -43,10 +43,6 @@ a[target="_blank"]:not(.share-icon):after {
     margin-left: -27px !important;
 }
 
-.box-servizi > a > .Entrypoint-item {
-    height: 100% !important;
-}
-
 .wp-caption-text, .wp-block-image > figcaption {
     display: none !important;
 }

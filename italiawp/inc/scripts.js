@@ -44,15 +44,19 @@ $(document).ready(function () {
         return false;
     });
     
-    $.each($("ul#primary-menu > li"), function () {
+    $("ul#primary-menu > li").each(function () {
         if ($(this).has("ul").length) {
             $(this).has("ul").find("a:first").removeAttr("href");
         }
     });
     
-    $.each($('a[target="_blank"]'), function () {
-        if( !$.trim( $(this).html() ).length || $(this).is(':has(figure)') ) {
-            $(this).toggleClass('empty-link');
+    $('a').each(function () {
+        if (!(location.hostname === this.hostname || !this.hostname.length ||
+                !$.trim($(this).html()).length || $(this).is(':has(figure)') ||
+                $(this).closest(".Offcanvas").length || $(this).closest(".Header").length ||
+                $(this).closest(".Footer-block").length || $(this).closest(".box-servizi").length ||
+                $(this).closest(".Utilities").length)) {
+            $(this).addClass('external-link');
         }
     });
 });

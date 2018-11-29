@@ -7,7 +7,7 @@
 ?>
 
 <div class="u-background-white u-color-black u-text-xxl section">
-    <div class="u-layout-wide u-layoutCenter u-layout-r-withGutter section">
+    <div class="u-layout-wide u-layoutCenter u-layout-r-withGutter section Utilities">
         <section class="u-padding-r-top u-padding-r-bottom">
             <h2 class="u-text-h3 u-layout-centerLeft">Utilità</h2>
             

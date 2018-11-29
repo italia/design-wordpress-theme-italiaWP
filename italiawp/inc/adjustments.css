@@ -17,7 +17,7 @@
     }
 }
 
-a[target="_blank"]:not(.share-icon):after {
+.external-link:not(.share-icon):after {
     content: " \1f59d";
     font-family: ita!important;
     -moz-osx-font-smoothing: grayscale;
@@ -30,14 +30,6 @@ a[target="_blank"]:not(.share-icon):after {
     speak: none;
     text-transform: none;
     white-space: pre;
-}
-
-.Offcanvas a[target="_blank"]:after,
-.Header a[target="_blank"]:after,
-.Footer-block a[target="_blank"]:after,
-.empty-link:after {
-    content: "" !important;
-    display: none !important;
 }
 
 .Forward--absolute {

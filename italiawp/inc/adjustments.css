@@ -34,7 +34,8 @@ a[target="_blank"]:not(.share-icon):after {
 
 .Offcanvas a[target="_blank"]:after,
 .Header a[target="_blank"]:after,
-.Footer-block a[target="_blank"]:after {
+.Footer-block a[target="_blank"]:after,
+.empty-link:after {
     content: "" !important;
     display: none !important;
 }

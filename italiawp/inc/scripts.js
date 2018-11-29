@@ -44,21 +44,21 @@ $(document).ready(function () {
         return false;
     });
     
-    $.each($("ul#primary-menu > li"), function (index, obj) {
-        if ($(obj).has("ul").length) {
-            $(obj).has("ul").find("a:first").removeAttr("href");
+    $.each($("ul#primary-menu > li"), function () {
+        if ($(this).has("ul").length) {
+            $(this).has("ul").find("a:first").removeAttr("href");
+        }
+    });
+    
+    $.each($('a[target="_blank"]'), function () {
+        if( !$.trim( $(this).html() ).length || $(this).is(':has(figure)') ) {
+            $(this).toggleClass('empty-link');
         }
     });
 });
 
-$(window).load(function() {
-});
-
 $(window).resize(function() {
     mapWrap();
-});
-
-$(window).scroll(function() {
 });
 
 function mapWrap() {

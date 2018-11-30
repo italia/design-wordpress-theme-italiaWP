@@ -59,6 +59,24 @@ $(document).ready(function () {
             $(this).addClass('external-link');
         }
     });
+    
+    $(".italiawp-sidebar select").not(".italiawp-sidebar .italiawp-search select").addClass("Form-input");
+    $(".italiawp-sidebar label").not(".italiawp-sidebar .italiawp-search label").addClass("Form-label u-padding-bottom-xs");
+    $(".italiawp-sidebar input").not(".italiawp-sidebar .italiawp-search input").addClass("Form-input");
+    
+    $(".italiawp-sidebar label").not(".italiawp-sidebar .italiawp-search label").each(function(){
+        $(this).next("select").andSelf().wrapAll('<div class="Form-field" />"');
+    });
+    
+    $(".italiawp-sidebar .Form-field").not(".italiawp-sidebar .italiawp-search .Form-field")
+        .wrap('<ul class="Linklist Linklist--padded u-layout-prose u-text-r-xs" />').wrap('<li class="Linklist-link Linklist-link--lev2 u-padding-all-xs" />')
+        .wrap('<form class="Form u-padding-all-xs u-text-r-xs" />').wrap('<fieldset class="Form-fieldset" />')
+        .wrap('<div class="Grid Grid--withGutter" />"').wrap('<div class="Grid-cell u-md-size1of1 u-lg-size1of1" />"');
+
+    $(".italiawp-sidebar .italiawp-search .Form-field")
+        .wrap('<ul class="Linklist Linklist--padded u-layout-prose u-text-r-xs" />').wrap('<li class="Linklist-link Linklist-link--lev2 u-padding-all-s" />');
+
+    $(".italiawp-sidebar .italiawp-search").removeClass("Header-search");
 });
 
 $(window).resize(function() {

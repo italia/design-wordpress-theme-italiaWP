@@ -150,3 +150,11 @@ button.mfp-close {
 .Forward {
     cursor: pointer;
 }
+
+.italiawp-sidebar .italiawp-search .Linklist-link.Linklist-link--lev2 {
+    border: none !important;
+}
+
+.italiawp-sidebar .italiawp-search .Linklist-link.Linklist-link--lev2:hover {
+    text-decoration: none !important;
+}

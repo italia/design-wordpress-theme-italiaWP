@@ -60,11 +60,15 @@ $(document).ready(function () {
         }
     });
     
-    $(".italiawp-sidebar select").not(".italiawp-sidebar .italiawp-search select").addClass("Form-input");
-    $(".italiawp-sidebar label").not(".italiawp-sidebar .italiawp-search label").addClass("Form-label u-padding-bottom-xs");
-    $(".italiawp-sidebar input").not(".italiawp-sidebar .italiawp-search input").addClass("Form-input");
+    $(".italiawp-sidebar select, .Footer select").not(".italiawp-sidebar .italiawp-search select").addClass("Form-input");
+    $(".italiawp-sidebar label, .Footer label").not(".italiawp-sidebar .italiawp-search label").addClass("Form-label u-padding-bottom-xs");
+    $('.italiawp-sidebar input:not([type="button"]):not([type="submit"]), .Footer input:not([type="button"]):not([type="submit"])')
+            .not('.italiawp-sidebar .italiawp-search input:not([type="button"]):not([type="submit"])').addClass("Form-input");
+    $('.italiawp-sidebar input[type="button"], .italiawp-sidebar input[type="submit"], .Footer input[type="button"], .Footer input[type="submit"]')
+            .not('.italiawp-sidebar .italiawp-search input[type="button"], .italiawp-sidebar .italiawp-search input[type="submit"]')
+            .addClass("Button Button--default u-text-xs");
     
-    $(".italiawp-sidebar label").not(".italiawp-sidebar .italiawp-search label").each(function(){
+    $(".italiawp-sidebar label, .Footer label").not(".italiawp-sidebar .italiawp-search label").each(function(){
         $(this).next("select").andSelf().wrapAll('<div class="Form-field" />"');
     });
     

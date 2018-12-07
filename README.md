@@ -25,7 +25,7 @@
 
 _[ Testato su: **WordPress 4.9.8** | **PHP 5.6.37** ]_
 
-_[ Testato su: **WordPress 5.0** ma ancora **NON COMPATIBILE** con l'editor **Gutemberg!!!** ]_
+_[ Testato su **WordPress 5.0** ma ancora **NON COMPATIBILE** con il nuovo editor **Gutenberg!!!** ]_
 
 ## --IMPORTANTE!-- Dopo l'aggiornamento a _WordPress 5_:
 

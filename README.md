@@ -25,6 +25,15 @@
 
 _[ Testato su: **WordPress 4.9.8** | **PHP 5.6.37** ]_
 
+_[ Testato su: **WordPress 5.0** ma ancora **NON COMPATIBILE** con l'editor **Gutemberg!!!** ]_
+
+## --IMPORTANTE!-- Dopo l'aggiornamento a _WordPress 5_:
+
+1. Arrivati nella landing page successiva all'aggiornamento cliccare su _"Scopri come continuare ad utilizzare il vecchio editor."_
+2. Selezionare _"Installa il plugin Classic Editor"_
+3. Scegliere _"Installa ora"_
+4. Attivare il plugin
+
 ## In caso di utilizzo del _Tema Child_:
 
 Ripetere la procedura precedente ma con il file [.zip](https://raw.githubusercontent.com/italia/design-wordpress-theme-wt/master/italiawp-child.zip)
@@ -73,6 +82,10 @@ Gli aggiornamenti sono notificati in _"Aspetto" > "Temi"_ oppure nella _pagina d
 ## Plugin Wordpress:
 
 I seguenti plugins WordPress, già compresi o consigliati, sono già gestiti graficamente nel tema.
+
+**Importanti:**
+
+* [**Classic Editor**](https://it.wordpress.org/plugins/classic-editor/) ripristina l'*Editor Classico* di WordPress
 
 **Compresi nel tema:**
 

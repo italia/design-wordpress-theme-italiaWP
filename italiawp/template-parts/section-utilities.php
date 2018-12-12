@@ -29,10 +29,10 @@
         </section>
     </div>
     
-    <?php if (is_front_page()) { ?>
+    <?php if (is_front_page()): ?>
     <div class="Forward Forward--floating u-color-70" aria-hidden="true">
         <span class="Icon Icon-expand"></span>
     </div>
-    <?php } ?>
+    <?php endif; ?>
     
 </div>

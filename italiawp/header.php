@@ -132,18 +132,18 @@
                     <div class="Header-social Headroom-hideme">
                         <p>Seguici su</p>
                         <ul class="Header-socialIcons">
-                        <?php if(get_option('dettagli-facebook')!="") { ?>
+                        <?php if(get_option('dettagli-facebook')!=""): ?>
                             <li><a target="_blank" title="Facebook" href="<?php echo get_option('dettagli-facebook'); ?>"><span class="Icon-facebook"></span><span class="u-hiddenVisually">Facebook</span></a></li>
-                        <?php } ?>
-                        <?php if(get_option('dettagli-twitter')!="") { ?>
+                        <?php endif; ?>
+                        <?php if(get_option('dettagli-twitter')!=""): ?>
                             <li><a target="_blank" title="Twitter" href="<?php echo get_option('dettagli-twitter'); ?>"><span class="Icon-twitter"></span><span class="u-hiddenVisually">Twitter</span></a></li>
-                        <?php } ?>
-                        <?php if(get_option('dettagli-youtube')!="") { ?>
+                        <?php endif; ?>
+                        <?php if(get_option('dettagli-youtube')!=""): ?>
                             <li><a target="_blank" title="YouTube" href="<?php echo get_option('dettagli-youtube'); ?>"><span class="Icon-youtube"></span><span class="u-hiddenVisually">Youtube</span></a></li>
-                        <?php } ?>
-                        <?php if(get_option('dettagli-instagram')!="") { ?>
+                        <?php endif; ?>
+                        <?php if(get_option('dettagli-instagram')!=""): ?>
                             <li><a target="_blank" title="Instagram" href="<?php echo get_option('dettagli-instagram'); ?>"><span class="Icon-instagram"></span><span class="u-hiddenVisually">Instagram</span></a></li>
-                        <?php } ?>
+                        <?php endif; ?>
                         </ul>
                     </div>
 
@@ -195,8 +195,7 @@
     <?php if(!is_attachment()) italiawp_create_breadcrumbs(); ?>
 
     <?php
-    if (is_front_page()) {
-
+    if(is_front_page()):
         if (get_theme_mod('active_section_hero'))
             get_template_part('template-parts/section-hero');
         if (get_theme_mod('active_section_services'))
@@ -209,5 +208,4 @@
             get_template_part('template-parts/section-last-news');
         if (get_theme_mod('active_section_galleries'))
             get_template_part('template-parts/section-gallery');
-        
-    } ?>
+    endif; ?>

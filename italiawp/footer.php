@@ -5,7 +5,7 @@
  */
 ?>
 
-<?php if(is_front_page()) { ?>
+<?php if(is_front_page()): ?>
 <div id="mappa" class="u-layout-centerContent u-padding-r-top u-padding-r-bottom section">
     <section class="u-layout-wide u-layout-r-withGutter u-padding-r-top u-padding-r-bottom">
         <h2 class="u-layout-centerLeft u-text-h3">Mappa Interattiva</h2>
@@ -17,7 +17,7 @@
     <div class="map-wrap"></div>
     <iframe src="<?php echo get_option('dettagli-map'); ?>" frameborder="0" allowfullscreen></iframe>
 </div>
-<?php } ?>
+<?php endif; ?>
         
 <div class="u-background-95 u-hiddenPrint">
     <div class="u-layout-wide u-layoutCenter u-layout-r-withGutter">
@@ -78,9 +78,9 @@
                         <address>
                             PEC<br><a href="mailto:<?php echo get_option('dettagli-pec'); ?>" ><?php echo get_option('dettagli-pec'); ?></a><br><br>
                             Email<br><a href="mailto:<?php echo get_option('dettagli-email'); ?>" ><?php echo get_option('dettagli-email'); ?></a><br><br>
-                        <?php if(get_option('dettagli-email2')!="") { ?>
+                        <?php if(get_option('dettagli-email2')!=""): ?>
                             Email<br><a href="mailto:<?php echo get_option('dettagli-email2'); ?>" ><?php echo get_option('dettagli-email2'); ?></a>
-                        <?php } ?>
+                        <?php endif; ?>
                         </address>
                     </div>
                 </div>
@@ -89,18 +89,18 @@
                     <h2 class="Footer-blockTitle">Seguici su</h2>
                     <div class="Footer-subBlock">
                         <ul class="Footer-socialIcons">
-                        <?php if(get_option('dettagli-facebook')!="") { ?>
+                        <?php if(get_option('dettagli-facebook')!=""): ?>
                             <li><a target="_blank" href="<?php echo get_option('dettagli-facebook'); ?>"><span class="Icon Icon-facebook"></span><span class="u-hiddenVisually">Facebook</span></a></li>
-                        <?php } ?>
-                        <?php if(get_option('dettagli-twitter')!="") { ?>
+                        <?php endif; ?>
+                        <?php if(get_option('dettagli-twitter')!=""): ?>
                             <li><a target="_blank" href="<?php echo get_option('dettagli-twitter'); ?>"><span class="Icon Icon-twitter"></span><span class="u-hiddenVisually">Twitter</span></a></li>
-                        <?php } ?>
-                        <?php if(get_option('dettagli-youtube')!="") { ?>
+                        <?php endif; ?>
+                        <?php if(get_option('dettagli-youtube')!=""): ?>
                             <li><a target="_blank" href="<?php echo get_option('dettagli-youtube'); ?>"><span class="Icon Icon-youtube"></span><span class="u-hiddenVisually">Youtube</span></a></li>
-                        <?php } ?>
-                        <?php if(get_option('dettagli-instagram')!="") { ?>
+                        <?php endif; ?>
+                        <?php if(get_option('dettagli-instagram')!=""): ?>
                             <li><a target="_blank" href="<?php echo get_option('dettagli-instagram'); ?>"><span class="Icon Icon-instagram"></span><span class="u-hiddenVisually">Instagram</span></a></li>
-                        <?php } ?>
+                        <?php endif; ?>
                         </ul>
                     </div>
                 </div>

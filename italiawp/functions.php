@@ -206,18 +206,26 @@ function italiawp_create_breadcrumbs() {
 }
 
 add_filter('the_excerpt', function ($excerpt) {
-    return substr(strip_shortcodes($excerpt), 0, strpos(strip_shortcodes($excerpt), '.') + 1);
+    if ( has_excerpt() ) {
+        return $excerpt;
+    } else {
+        return substr(strip_shortcodes($excerpt), 0, strpos(strip_shortcodes($excerpt), '.') + 1);
+    }
 });
 
 add_filter('get_the_excerpt', function ($excerpt) {
-    if (strpos($excerpt, '.') === false) {
-        if(strlen(strip_shortcodes($excerpt))>115) {
-            return substr(strip_shortcodes($excerpt), 0, 115);
+    if ( has_excerpt() ) {
+        return $excerpt;
+    } else {
+        if (strpos($excerpt, '.') === false) {
+            if(strlen(strip_shortcodes($excerpt))>115) {
+                return substr(strip_shortcodes($excerpt), 0, 115);
+            }else{
+                return strip_shortcodes($excerpt);
+            }
         }else{
-            return strip_shortcodes($excerpt);
+            return substr(strip_shortcodes($excerpt), 0, strpos(strip_shortcodes($excerpt), '.') + 1);
         }
-    }else{
-        return substr(strip_shortcodes($excerpt), 0, strpos(strip_shortcodes($excerpt), '.') + 1);
     }
 });
 

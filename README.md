@@ -23,9 +23,7 @@
 4. Scegliere il file .zip scaricato in precedenza, senza decomprimerlo e cliccare _"Installa ora"_
 5. Selezionare _"Attiva"_ per poter utilizzare il tema
 
-_[ Testato su: **WordPress 4.9.8** | **PHP 5.6.37** ]_
-
-_[ Testato su **WordPress 5.0** ma ancora **NON COMPATIBILE** con il nuovo editor **Gutenberg!!!** ]_
+_[ Testato su **WordPress 5.03** (ma ancora **NON COMPATIBILE** con il nuovo editor **Gutenberg!!!**) | **PHP 5.6.37** ]_
 
 ## --IMPORTANTE!-- Dopo l'aggiornamento a _WordPress 5_:
 
@@ -55,7 +53,7 @@ del _Tema Child_, successivamente configurare il _Tema Child_ lasciando _ItaliaW
 
 ## Principali caratteristiche di _ItaliaWP_:
 
-* **WordPress**: è realizzato per l'ultima versione di _WordPress_ disponibile in Italiano (attualmente 4.9.8)
+* **WordPress**: è realizzato per l'ultima versione di _WordPress_ disponibile in Italiano
 * **Responsive**: si adatta ad _ogni tipo di dispositivo_ (desktop, tablet e mobile) mantenendo le funzionalità
 * Pagina **"DETTAGLI"** nel backend: è possibile inserire e modificare facilmente le _informazioni di contatto_, i _link dei profili social_, il numero di _ultimi articoli_ in homepage e gli _ID delle pagine_ Privacy, Note legali e Contatti
 * **14 posizioni del menu**: _menu principale_, _menu utilità_, 9 per i _box servizi_ (divisi in 3 tipologie), 3 per i _links_
@@ -99,7 +97,7 @@ I seguenti plugins WordPress, già compresi o consigliati, sono già gestiti gra
 
 ## Licenza:
 
-Copyright (c) 2018 & moral rights [**Boris Amico**](http://borisamico.it).
+Copyright (c) 2018-2019 & moral rights [**Boris Amico**](http://borisamico.it).
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as

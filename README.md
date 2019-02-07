@@ -1,4 +1,4 @@
-# ![developers.italia](https://docs.developers.italia.it/assets/icons/favicon-32x32.png "developers.italia")  ItaliaWP
+# ![developers.italia](https://docs.italia.it/media/docsitalia/icons/favicon-32x32.png "developers.italia")  ItaliaWP
 ## Tema WordPress per la Pubblica Amministrazione
 
 ---

@@ -158,3 +158,82 @@ button.mfp-close {
 .italiawp-sidebar .italiawp-search .Linklist-link.Linklist-link--lev2:hover {
     text-decoration: none !important;
 }
+
+/* Allineamenti immagini se ci sono gli stili AGID */
+
+section.alignnone {
+    margin: 5px 20px 20px 0 !important;
+}
+
+section.aligncenter {
+    display: block !important;
+    text-align: center !important;
+}
+
+section.aligncenter.u-borderShadow-xxs {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+section.aligncenter > a {
+    display: inline-block !important;
+}
+
+section.aligncenter > a > figure {
+    margin-bottom: 3px !important;
+    border-radius: 4px !important;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(50,50,50,.35) !important;
+    box-shadow: 0 1px 2px 0 rgba(50,50,50,.35) !important;
+}
+
+section.alignright {
+    float: right !important;
+    margin: 5px 0 20px 20px !important;
+}
+
+section.alignleft {
+    float: left !important;
+    margin: 5px 20px 20px 0 !important;
+}
+
+/* Allineamenti immagini se NON ci sono gli stili AGID */
+
+img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+img.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+img.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

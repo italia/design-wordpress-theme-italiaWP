@@ -145,14 +145,14 @@ if (!get_theme_mod('disactive_stili_immagini_agid')) {
             if ( strpos($class, 'in-gallery') == false ) {
                 $src = $xpath->evaluate("string(//img/@src)");
                 $attachment_id = get_attachment_id($src);
-                $content = str_replace($image, italiawp_custom_image_tag($src, $attachment_id), $content);
+                $content = str_replace($image, italiawp_custom_image_tag($src, $attachment_id, $class), $content, $class);
             }
         }
 
         return $content;
     }
 
-    function italiawp_custom_image_tag($src, $attachment_id) {
+    function italiawp_custom_image_tag($src, $attachment_id, $class) {
         $attachment_meta = wp_get_attachment($attachment_id);
 
         $imgCaption = $attachment_meta['caption'];
@@ -163,9 +163,20 @@ if (!get_theme_mod('disactive_stili_immagini_agid')) {
 
         $fullImage = wp_get_attachment_image_src($attachment_id, 'full');
         $fullImage = $fullImage[0];
+        
+        $class_align = "";
+        if (strpos($class, 'alignleft') == true) {
+            $class_align = ' alignleft';
+        }
+        if (strpos($class, 'alignright') == true) {
+            $class_align = ' alignright';
+        }
+        if (strpos($class, 'aligncenter') == true) {
+            $class_align = ' aligncenter';
+        }
 
         $custom_image = '
-        <section class="u-nbfc u-borderShadow-xxs u-borderRadius-m image-content u-color-grey-30 u-background-white">
+        <section class="u-nbfc u-borderShadow-xxs u-borderRadius-m image-content u-color-grey-30 u-background-white italiawp-img'.$class_align.'">
             <figure class="u-background-grey-60 u-padding-all-s">
                 <img src="' . $imgSrc . '" class="u-sizeFull" alt="' . $imgAlt . '">
                 <figcaption class="u-padding-r-top">

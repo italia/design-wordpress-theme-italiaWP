@@ -80,6 +80,15 @@ function italiawp_customize_register($wp_customize) {
         'label' => 'Utilità',
         'type' => 'checkbox', 'section' => 'site_settings', 'settings' => 'active_section_utilities'
     ));
+    
+/* Map */
+    $wp_customize->add_setting('active_section_map', array(
+        'default' => false, 'capability' => 'edit_theme_options', 'sanitize_callback' => 'italiawp_sanitize_checkbox'
+    ));
+    $wp_customize->add_control('active_section_map', array(
+        'label' => 'Mappa',
+        'type' => 'checkbox', 'section' => 'site_settings', 'settings' => 'active_section_map'
+    ));
 
 /* Sezione "Preferenze Pagine" nel customizer */
     $wp_customize->add_section('pages_settings', array(

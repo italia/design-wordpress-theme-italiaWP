@@ -75,6 +75,9 @@ del _Tema Child_, successivamente configurare il _Tema Child_ lasciando _ItaliaW
 
 Gli aggiornamenti sono notificati in _"Aspetto" > "Temi"_ oppure nella _pagina degli aggiornamenti_ del backend di WordPress.
 
+**--IMPORTANTE!--**
+Dalla versione 1.3.3 la sezione della mappa non è attiva di default ma va attivata in _"Aspetto" > "Personalizza"_ > _"Sito & Homepage"_
+
 ---
 
 ## Plugin Wordpress:

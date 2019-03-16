@@ -130,6 +130,8 @@
 
                 <div class="Header-utils Grid-cell">
                     <div class="Header-social Headroom-hideme">
+                        <?php if( !( get_option('dettagli-facebook')=="" && get_option('dettagli-twitter')=="" && get_option('dettagli-youtube')=="" && get_option('dettagli-instagram')=="" ) ): ?>
+                        
                         <p>Seguici su</p>
                         <ul class="Header-socialIcons">
                         <?php if(get_option('dettagli-facebook')!=""): ?>
@@ -145,6 +147,8 @@
                             <li><a target="_blank" title="Instagram" href="<?php echo get_option('dettagli-instagram'); ?>"><span class="Icon-instagram"></span><span class="u-hiddenVisually">Instagram</span></a></li>
                         <?php endif; ?>
                         </ul>
+                        
+                        <?php endif; ?>
                     </div>
 
                 <?php get_search_form(); ?>

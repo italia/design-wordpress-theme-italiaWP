@@ -76,6 +76,7 @@
                     </div>
                 </div>
 
+                <?php if( !( get_option('dettagli-facebook')=="" && get_option('dettagli-twitter')=="" && get_option('dettagli-youtube')=="" && get_option('dettagli-instagram')=="" ) ): ?>
                 <div class="Footer-block Grid-cell u-sm-size1of2 u-md-size1of4 u-lg-size1of4">
                     <h2 class="Footer-blockTitle">Seguici su</h2>
                     <div class="Footer-subBlock">
@@ -95,6 +96,7 @@
                         </ul>
                     </div>
                 </div>
+                <?php endif; ?>
 
             </div>
 

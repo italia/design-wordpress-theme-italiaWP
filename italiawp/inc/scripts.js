@@ -81,6 +81,29 @@ $(document).ready(function () {
         .wrap('<ul class="Linklist Linklist--padded u-layout-prose u-text-r-xs" />').wrap('<li class="Linklist-link Linklist-link--lev2 u-padding-all-s" />');
 
     $(".italiawp-sidebar .italiawp-search").removeClass("Header-search");
+    
+    /* Slide Gallerie Home */
+    $('.owl-carousel')
+            .owlCarousel({
+                loop: true,
+                margin: 10,
+                navContainer: ".owl-nav",
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    768: {
+                        items: 2
+                    },
+                    992: {
+                        items: 3
+                    }
+                }
+            });
+
+    $(".owl-prev,.owl-next").addClass("u-padding-bottom-xl u-text-r-xl u-color-teal-50");
+    $(".owl-prev span").empty().addClass("u-alignMiddle Icon Icon-arrow-left");
+    $(".owl-next span").empty().addClass("u-alignMiddle Icon Icon-arrow-right");
 });
 
 $(window).resize(function() {

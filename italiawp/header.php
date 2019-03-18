@@ -210,6 +210,11 @@
             get_template_part('template-parts/section-last-one-news');
         if (get_theme_mod('active_section_last_news'))
             get_template_part('template-parts/section-last-news');
-        if (get_theme_mod('active_section_galleries'))
-            get_template_part('template-parts/section-gallery');
+        if (get_theme_mod('active_section_galleries')):
+            if (get_theme_mod('disactive_gallerie_slideshow')):
+                get_template_part('template-parts/section-gallery');
+            else:
+                get_template_part('template-parts/section-gallery-slideshow');
+            endif;
+        endif;
     endif; ?>

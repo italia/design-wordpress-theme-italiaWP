@@ -237,3 +237,15 @@ a img.aligncenter {
     margin-left: auto;
     margin-right: auto;
 }
+
+.owl-prev,.owl-next {
+    cursor: pointer !important;
+}
+
+.owl-next {
+    margin-left: 40px !important;
+}
+
+.owl-dots {
+    margin-top: 40px !important;
+}

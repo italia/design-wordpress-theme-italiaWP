@@ -148,6 +148,12 @@
 <script>__PUBLIC_PATH__ = '<?php bloginfo('template_url'); ?>/webtoolkit/'</script>
 <script src="<?php bloginfo('template_url'); ?>/webtoolkit/IWT.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/inc/scripts.js"></script>
+   
+<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/inc/carousel/owl.carousel.min.css">
+<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/inc/carousel/owl.theme.default.min.css">
+    
+<script src="<?php bloginfo('template_url'); ?>/inc/carousel/owl.carousel.min.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/inc/carousel/owlcarousel2-a11ylayer.js"></script>
 
 </body>
 </html>

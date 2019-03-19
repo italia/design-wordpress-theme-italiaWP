@@ -123,13 +123,13 @@ function italiawp_customize_register($wp_customize) {
         'type' => 'checkbox', 'section' => 'pages_settings', 'settings' => 'disactive_stili_immagini_agid'
     ));
     
-/* Sezione Gallerie in Home (Slideshow o Standard) */
-    $wp_customize->add_setting('disactive_gallerie_slideshow', array(
+/* Sezione Gallerie in Home (Carousel o Standard) */
+    $wp_customize->add_setting('disactive_gallerie_carousel', array(
         'default' => false, 'capability' => 'edit_theme_options', 'sanitize_callback' => 'italiawp_sanitize_checkbox'
     ));
-    $wp_customize->add_control('disactive_gallerie_slideshow', array(
-        'label' => 'Disattiva la visualizzazione slideshow della sezione GALLERIE in homepage',
-        'type' => 'checkbox', 'section' => 'pages_settings', 'settings' => 'disactive_gallerie_slideshow'
+    $wp_customize->add_control('disactive_gallerie_carousel', array(
+        'label' => 'Disattiva la visualizzazione carousel della sezione GALLERIE in homepage',
+        'type' => 'checkbox', 'section' => 'pages_settings', 'settings' => 'disactive_gallerie_carousel'
     ));
     
 /* Colore Principale */

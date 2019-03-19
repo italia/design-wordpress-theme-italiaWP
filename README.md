@@ -79,7 +79,7 @@ Gli aggiornamenti sono notificati in _"Aspetto" > "Temi"_ oppure nella _pagina d
 Dalla versione **1.3.3** la sezione della **mappa** non è attiva di default ma va attivata in _"Aspetto" > "Personalizza"_ > _"Sito & Homepage"_
 
 **--IMPORTANTE!--**
-Dalla versione **1.3.5** la sezione **gallerie fotografiche** in homepage è attiva di default con la visualizzazione slideshow (in linea con il webtoolkit), si può tornare alla visualizzazione precedente da _"Aspetto" > "Personalizza"_ > _"Preferenze Pagine & Articoli"_ > _"Disattiva la visualizzazione slideshow della sezione GALLERIE in homepage"_
+Dalla versione **1.3.5** la sezione **gallerie fotografiche** in homepage è attiva di default con la visualizzazione carousel (in linea con il webtoolkit), si può tornare alla visualizzazione precedente da _"Aspetto" > "Personalizza"_ > _"Preferenze Pagine & Articoli"_ > _"Disattiva la visualizzazione carousel della sezione GALLERIE in homepage"_
 
 ---
 

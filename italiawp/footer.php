@@ -101,9 +101,15 @@
             </div>
 
             <ul class="Footer-links u-cf">
-                <li><a href="<?php echo get_permalink(get_option('dettagli-id-privacy')); ?>" title="Privacy policy">Privacy</a></li>
-                <li><a href="<?php echo get_permalink(get_option('dettagli-id-notelegali')); ?>" title="Note legali">Note legali</a></li>
-                <li><a href="<?php echo get_permalink(get_option('dettagli-id-contatti')); ?>" title="Contatti">Contatti</a></li>
+                <?php if(get_option('dettagli-id-privacy')!=""): ?>
+                    <li><a href="<?php echo get_permalink(get_option('dettagli-id-privacy')); ?>" title="Privacy policy">Privacy</a></li>
+                <?php endif; ?>
+                <?php if(get_option('dettagli-id-notelegali')!=""): ?>
+                    <li><a href="<?php echo get_permalink(get_option('dettagli-id-notelegali')); ?>" title="Note legali">Note legali</a></li>
+                <?php endif; ?>
+                <?php if(get_option('dettagli-id-contatti')!=""): ?>
+                    <li><a href="<?php echo get_permalink(get_option('dettagli-id-contatti')); ?>" title="Contatti">Contatti</a></li>
+                <?php endif; ?>
                 <li>Realizzato con <a target="_blank" href="https://it.wordpress.org">WordPress</a></li>
                 
                 <!-- Per favore, non rimuoverlo! -->

@@ -35,7 +35,9 @@
                         if (strpos($link,'page/') !== false) {
                             $link = substr($link, 0, strpos($link, 'page/'));
                         }
-                        $link = get_bloginfo('url').$link;
+                        if(!is_child_theme()) {
+                            $link = get_bloginfo('url').$link;
+                        }
                     } ?>
             <li class="Grid-cell u-textCenter u-hidden u-md-inlineBlock u-lg-inlineBlock">
                 <a href="<?php echo $link; ?>page/<?php echo $j; if(is_search()) echo $search; ?>" aria-label="Pagina <?php echo $j; ?>" class="u-padding-r-all u-color-50 u-textClean u-block">

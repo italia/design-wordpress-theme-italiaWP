@@ -83,7 +83,7 @@ $(document).ready(function () {
     $(".italiawp-sidebar .italiawp-search").removeClass("Header-search");
     
     /* Slide Gallerie Home */
-    $('.owl-carousel')
+    $(".owl-carousel")
             .owlCarousel({
                 loop: true,
                 margin: 10,

@@ -57,7 +57,7 @@ del _Tema Child_, successivamente configurare il _Tema Child_ lasciando _ItaliaW
 * **Responsive**: si adatta ad _ogni tipo di dispositivo_ (desktop, tablet e mobile) mantenendo le funzionalità
 * Pagina **"DETTAGLI"** nel backend: è possibile inserire e modificare facilmente le _informazioni di contatto_, i _link dei profili social_, il numero di _ultimi articoli_ in homepage e gli _ID delle pagine_ Privacy, Note legali e Contatti
 * **14 posizioni del menu**: _menu principale_, _menu utilità_, 9 per i _box servizi_ (divisi in 3 tipologie), 3 per i _links_
-    * Nei menu **Utilità** e **Box Servizi** è possibile inserire delle immagini utilizzando i _Link personalizzati_ e inserendo direttamente il tag html **<img src="URL">** nel _Testo del link_
+    * Nei menu **Utilità** e **Box Servizi** è possibile inserire delle immagini utilizzando i _Link personalizzati_ e inserendo direttamente il tag html **< img src="URL" >** nel _Testo del link_
 * **3 aree widget**: per le colonne previste nel _footer_, _sidebar_ per le _pagine_ (disattivabile scegliendo l'appostito _Template_) e per gli _articoli_
 * **Logo, titolo e descrizione**: personalizzazione del _logo_, del _titolo_, della _denominazione_ e dell'_icona_ del sito direttamente dalla personalizzazione del tema
 * **Immagini** e **Gallerie Fotografiche**: ritaglio e sistemazione automatica delle _immagini principali_ degli articoli, gestione grafica secondo le linee guida delle _singole immagini_ (disattivabile) e _gallerie_ caricate negli articoli o nella pagine. Gestione di Gallerie Fotografiche esterne tramite _Custom Post Type_
@@ -83,7 +83,7 @@ Dalla versione **1.3.3** la sezione della **mappa** non è attiva di default ma 
 Dalla versione **1.3.5** la sezione **gallerie fotografiche** in homepage è attiva di default con la visualizzazione carousel (in linea con il webtoolkit), si può tornare alla visualizzazione precedente da _"Aspetto" > "Personalizza"_ > _"Preferenze Pagine & Articoli"_ > _"Disattiva la visualizzazione carousel della sezione GALLERIE in homepage"_
 
 **--IMPORTANTE!--**
-Dalla versione **1.4.1** è possibile inserire delle immagini nei menu **box servizi** e **utilità** tramite i _Link personalizzati_ e inserendo direttamente il tag html **<img src="URL">** nel _Testo del link_
+Dalla versione **1.4.1** è possibile inserire delle immagini nei menu **box servizi** e **utilità** tramite i _Link personalizzati_ e inserendo direttamente il tag html **< img src="URL" >** nel _Testo del link_
 
 ---
 

@@ -24,7 +24,7 @@
                         'link_before'     => '<div class="Entrypoint-item u-sizeFill u-background-teal-70">',
                         'link_after'      => '</div>'
                     );
-                    echo strip_tags(wp_nav_menu($menu),"<div><a>");
+                    echo strip_tags(wp_nav_menu($menu),"<div><a><img>");
                 } ?>
 
         <?php   if(has_nav_menu('box-servizi-2')) {
@@ -37,7 +37,7 @@
                         'link_before'     => '<div class="Entrypoint-item u-sizeFill u-background-teal-70">',
                         'link_after'      => '</div>'
                     );
-                    echo strip_tags(wp_nav_menu($menu),"<div><a>");
+                    echo strip_tags(wp_nav_menu($menu),"<div><a><img>");
                 } ?>
         
         <?php   if(has_nav_menu('box-servizi-3')) {
@@ -50,7 +50,7 @@
                         'link_before'     => '<div class="Entrypoint-item u-sizeFill u-background-teal-70">',
                         'link_after'      => '</div>'
                     );
-                    echo strip_tags(wp_nav_menu($menu),"<div><a>");
+                    echo strip_tags(wp_nav_menu($menu),"<div><a><img>");
                 } ?>
     </div>
     
@@ -65,7 +65,7 @@
                         'link_before'     => '<div class="Entrypoint-item u-sizeFill u-background-grey-40">',
                         'link_after'      => '</div>'
                     );
-                    echo strip_tags(wp_nav_menu($menu),"<div><a>");
+                    echo strip_tags(wp_nav_menu($menu),"<div><a><img>");
                 } ?>
 
         <?php   if(has_nav_menu('box-servizi-5')) {
@@ -78,7 +78,7 @@
                         'link_before'     => '<div class="Entrypoint-item u-sizeFill u-background-grey-40">',
                         'link_after'      => '</div>'
                     );
-                    echo strip_tags(wp_nav_menu($menu),"<div><a>");
+                    echo strip_tags(wp_nav_menu($menu),"<div><a><img>");
                 } ?>
         
         <?php   if(has_nav_menu('box-servizi-6')) {
@@ -91,7 +91,7 @@
                         'link_before'     => '<div class="Entrypoint-item u-sizeFill u-background-grey-40">',
                         'link_after'      => '</div>'
                     );
-                    echo strip_tags(wp_nav_menu($menu),"<div><a>");
+                    echo strip_tags(wp_nav_menu($menu),"<div><a><img>");
                 } ?>
     </div>
     
@@ -106,7 +106,7 @@
                         'link_before'     => '<div class="Entrypoint-item u-sizeFill u-background-50">',
                         'link_after'      => '</div>'
                     );
-                    echo strip_tags(wp_nav_menu($menu),"<div><a>");
+                    echo strip_tags(wp_nav_menu($menu),"<div><a><img>");
                 } ?>
 
         <?php   if(has_nav_menu('box-servizi-8')) {
@@ -119,7 +119,7 @@
                         'link_before'     => '<div class="Entrypoint-item u-sizeFill u-background-50">',
                         'link_after'      => '</div>'
                     );
-                    echo strip_tags(wp_nav_menu($menu),"<div><a>");
+                    echo strip_tags(wp_nav_menu($menu),"<div><a><img>");
                 } ?>
         
         <?php   if(has_nav_menu('box-servizi-9')) {
@@ -132,7 +132,7 @@
                         'link_before'     => '<div class="Entrypoint-item u-sizeFill u-background-50">',
                         'link_after'      => '</div>'
                     );
-                    echo strip_tags(wp_nav_menu($menu),"<div><a>");
+                    echo strip_tags(wp_nav_menu($menu),"<div><a><img>");
                 } ?>
     </div>
 

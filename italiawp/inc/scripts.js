@@ -60,6 +60,12 @@ $(document).ready(function () {
         }
     });
     
+    $(".box-servizi .Entrypoint-item").each(function () {
+        if ( $(this).size() && $("img", this).size() ) {
+            if( $(this).html().replace(/<img[^>]*>/g,"")==0 ) $(this).addClass("box-servizi-no-padding");
+        }
+    });
+    
     $(".italiawp-sidebar select, .Footer select").not(".italiawp-sidebar .italiawp-search select").addClass("Form-input");
     $(".italiawp-sidebar label, .Footer label").not(".italiawp-sidebar .italiawp-search label").addClass("Form-label u-padding-bottom-xs");
     $('.italiawp-sidebar input:not([type="button"]):not([type="submit"]), .Footer input:not([type="button"]):not([type="submit"])')

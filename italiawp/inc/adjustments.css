@@ -257,3 +257,51 @@ a img.aligncenter {
 .Header-language {
     padding-right: 0 !important;
 }
+
+/* Menu Utilità con immagine */
+
+.section.Utilities img {
+    width: calc(100% - 20px) !important;
+    height: auto !important;
+    border-radius: 4px !important;
+}
+
+/* Box Servizi con immagine */
+
+.box-servizi img {
+    height: auto !important;
+    width: calc(100% + 64px) !important;
+    margin: -32px -32px 10px !important;
+    border-radius: 4px !important;
+}
+
+@media screen and (min-width:992px) and (max-width:1365px){
+    .box-servizi img {
+        width: calc(100% + 56px) !important;
+        margin: -28px -28px 10px !important;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px){
+    .box-servizi img {
+        width: calc(100% + 48px) !important;
+        margin: -24px -24px 10px !important;
+    }
+}
+
+@media screen and (max-width:767px){
+    .box-servizi img {
+        width: calc(100% + 44px) !important;
+        margin: -22px -22px 10px !important;
+    }
+}
+
+.box-servizi .box-servizi-no-padding {
+    line-height: 0 !important;
+    padding: 0 !important;
+}
+
+.box-servizi .box-servizi-no-padding img {
+    width: 100% !important;
+    margin: 0 !important;
+}

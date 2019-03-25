@@ -82,13 +82,26 @@
     <header class="Header u-hiddenPrint">    
     <?php } ?>
 
-        <?php if(get_option('dettagli-nome-ammin-afferente')!="") { ?>
-        <div class="Header-banner ">
+    <?php if( !( get_option('dettagli-nome-ammin-afferente')=="" && get_option('dettagli-url-accedi')=="" ) ) { ?>
+        <div class="Header-banner">
             <div class="Header-owner Headroom-hideme ">
+            
+        <?php if(get_option('dettagli-nome-ammin-afferente')!="") { ?>
                 <a href="<?php echo get_option('dettagli-url-ammin-afferente'); ?>"><span><?php echo get_option('dettagli-nome-ammin-afferente'); ?></span></a>
+        <?php } ?>
+                
+        <?php if(get_option('dettagli-url-accedi')!="") { ?>
+                <div class="Header-languages ">
+                    <a href="<?php echo get_option('dettagli-url-accedi'); ?>" class="Header-language u-border-none u-zindex-max u-inlineBlock">
+                        <span class="">Accedi</span>
+                        <span class="Icon Icon-arrow-right u-padding-left-xs"></span>
+                    </a>
+                </div>
+        <?php } ?>
+                
             </div>
         </div>
-        <?php } ?>
+    <?php } ?>
 
         <div class="Header-navbar ">
             <div class="u-layout-wide Grid Grid--alignMiddle u-layoutCenter">

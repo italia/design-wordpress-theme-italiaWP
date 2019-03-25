@@ -249,3 +249,11 @@ a img.aligncenter {
 .owl-dots {
     margin-top: 40px !important;
 }
+
+.Header-banner {
+    min-height: 56px;
+}
+
+.Header-language {
+    padding-right: 0 !important;
+}

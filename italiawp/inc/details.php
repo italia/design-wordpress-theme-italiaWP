@@ -36,6 +36,11 @@ function italiawp_edit_custom_settings() { ?>
             <p><strong>ID pagina Contatti:</strong><br />
                 <input type="text" name="dettagli-id-contatti" size="10" value="<?php echo get_option('dettagli-id-contatti'); ?>" /></p>
             
+            <h3>Link "Accedi" in Header</h3>
+            
+            <p><strong>URL per il bottone "Accedi": (con HTTP o HTTPS)</strong><br />
+                <input type="text" name="dettagli-url-accedi" size="100" value="<?php echo get_option('dettagli-url-accedi'); ?>" /></p>
+            
             <h3>Contatti</h3>
 
             <p><strong>Indirizzo:</strong><br />
@@ -91,7 +96,7 @@ function italiawp_edit_custom_settings() { ?>
                                                             dettagli-indirizzo,dettagli-cap,dettagli-citta,dettagli-telefono,dettagli-fax,
                                                             dettagli-email,dettagli-pec,dettagli-cfpiva,dettagli-facebook,
                                                             dettagli-twitter,dettagli-youtube,dettagli-instagram,dettagli-map,
-                                                            dettagli-email2" />
+                                                            dettagli-email2,dettagli-url-accedi" />
 
         </form>
     </div>

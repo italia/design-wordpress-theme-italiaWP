@@ -11,6 +11,19 @@ $(document).ready(function () {
     $(".italiawp-sidebar > ul > li > a").addClass("Linklist-link Linklist-link--lev2");
     $(".italiawp-sidebar > ul > li > ul > li a").addClass("Linklist-link Linklist-link--lev3");
     
+    /* Forms */
+    $(".site-content .Prose form").addClass("Form Form--spaced u-padding-all-xl u-background-grey-10 u-text-r-xs u-layout-prose");
+    $(".site-content .Prose form label")
+            .addClass("Form-label").parent().addClass("Form-field");
+    $('.site-content .Prose form input:not([type="button"]):not([type="submit"])').addClass("Form-input");
+    $(".site-content .Prose form textarea").addClass("Form-input Form-textarea");
+    $('.site-content .Prose form input[type="button"], .site-content form input[type="submit"]')
+            .addClass("Button Button--default u-text-xs")
+            .parent().addClass("Form-field Grid-cell u-textRight");
+    $('.site-content .Prose form input[type="checkbox"], .site-content .Prose form input[type="radio"]')
+            .addClass("Form-input").after('<span class="Form-fieldIcon" role="presentation"></span>')
+            .parent().addClass("Form-label--block").parent().addClass("Form-field--choose");
+    
     mapWrap();
 
     $(".map-wrap").click(function () {

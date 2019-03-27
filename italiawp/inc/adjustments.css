@@ -271,28 +271,28 @@ a img.aligncenter {
 .box-servizi img {
     height: auto !important;
     width: calc(100% + 64px) !important;
-    margin: -32px -32px 10px !important;
-    border-radius: 4px !important;
+    margin: -32px -32px 14px !important;
+    border-radius: 4px 4px 0 0 !important;
 }
 
 @media screen and (min-width:992px) and (max-width:1365px){
     .box-servizi img {
         width: calc(100% + 56px) !important;
-        margin: -28px -28px 10px !important;
+        margin: -28px -28px 14px !important;
     }
 }
 
 @media screen and (min-width:768px) and (max-width:991px){
     .box-servizi img {
         width: calc(100% + 48px) !important;
-        margin: -24px -24px 10px !important;
+        margin: -24px -24px 14px !important;
     }
 }
 
 @media screen and (max-width:767px){
     .box-servizi img {
         width: calc(100% + 44px) !important;
-        margin: -22px -22px 10px !important;
+        margin: -22px -22px 14px !important;
     }
 }
 
@@ -304,4 +304,5 @@ a img.aligncenter {
 .box-servizi .box-servizi-no-padding img {
     width: 100% !important;
     margin: 0 !important;
+    border-radius: 4px !important;
 }

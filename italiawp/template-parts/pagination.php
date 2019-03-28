@@ -6,54 +6,45 @@
 ?>
 
 <?php if ( $wp_query->max_num_pages > 1 ) : ?>
-    <nav role="navigation" aria-label="Navigazione paginata" class="u-layout-prose u-margin-r-top">
+    <nav role="navigation" aria-label="Navigazione paginata" class="pagination u-layout-prose u-margin-r-top">
         <ul class="Grid Grid--fit Grid--alignMiddle u-text-r-xxs u-textCenter">
             <li class="Grid-cell u-textCenter">
                 <?php echo get_previous_posts_link( '<span class="Icon-chevron-left u-text-r-s" role="presentation"></span><span class="u-hiddenVisually">Pagina precedente</span>' ); ?>
             </li>
-
         <?php 
-            if($paged<=4) {
-                $jmin = 1; $jmax = 7;
-            }else{
-                $jmin = $paged - 3; $jmax = $paged + 3;
-            }
-            if($jmax > $wp_query->max_num_pages) $jmax = $wp_query->max_num_pages;
+            if($paged) {
+                $pages = paginate_links(array(
+                    'total' => $wp_query->max_num_pages,
+                    'current' => max(1, get_query_var('paged')),
+                    'show_all' => false,
+                    'end_size' => 1,
+                    'mid_size' => 1,
+                    'prev_next' => false,
+                    'before_page_number' => '<span class="u-text-r-s">',
+                    'after_page_number' => '</span>',
+                    'type' => 'array'
+                ));
 
-              for($j=$jmin; $j<=$wp_query->max_num_pages && $j<=$jmax; $j++) { ?>
-                <?php if($j != $paged) {
-                    $search = "";
-                    if(is_home()) $link = get_permalink( get_option( 'page_for_posts' ) );
-                    else if(is_search()) {
-                        $link = get_bloginfo('url').'/';
-                        $search = "/?s=".get_search_query();
-                    }else if(is_post_type_archive()) {
-                        $cpt = get_post_type($post);
-                        $link = get_bloginfo('url').'/'.$cpt.'/';
-                    }else {
-                        $link = str_replace(get_bloginfo('url'),"",current_url());
-                        if (strpos($link,'page/') !== false) {
-                            $link = substr($link, 0, strpos($link, 'page/'));
+                if(is_array($pages)) {
+                    $paged = ( get_query_var('paged') == 0 ) ? 1 : get_query_var('paged');
+                    foreach ($pages as $page) {
+                        if(get_query_var('paged') != 1) {
+                            echo '<li class="Grid-cell u-textCenter u-hidden u-md-inlineBlock u-lg-inlineBlock">'.$page.'</li>';
                         }
-                        if(!is_child_theme()) {
-                            $link = get_bloginfo('url').$link;
-                        }
-                    } ?>
-            <li class="Grid-cell u-textCenter u-hidden u-md-inlineBlock u-lg-inlineBlock">
-                <a href="<?php echo $link; ?>page/<?php echo $j; if(is_search()) echo $search; ?>" aria-label="Pagina <?php echo $j; ?>" class="u-padding-r-all u-color-50 u-textClean u-block">
-                    <span class="u-text-r-s"><?php echo $j; ?></span>
-                </a>
-                <?php }else{ ?>
-            <li class="Grid-cell u-textCenter">
-                <span class="u-text-r-s u-padding-r-all u-background-50 u-color-white"><?php echo $j; ?></span>
-                <?php } ?>
-            </li>
-
-        <?php } ?>
-
+                    }
+                }
+            } ?>
             <li class="Grid-cell u-textCenter">
                 <?php echo get_next_posts_link( '<span class="Icon-chevron-right u-text-r-s" role="presentation"></span><span class="u-hiddenVisually">Pagina successiva</span>' ); ?>
             </li>
         </ul>
     </nav>
 <?php endif; ?>
+
+<script>
+    $(document).ready(function () {
+        $(".pagination li a").addClass("u-padding-r-all u-color-50 u-textClean u-block");
+        $(".pagination li span.dots").addClass("u-padding-r-all u-color-50 u-block");
+        $(".pagination li span.current").addClass("u-text-r-s u-padding-r-all u-background-50 u-color-white");
+    });
+</script>

@@ -250,8 +250,8 @@ a img.aligncenter {
     margin-top: 40px !important;
 }
 
-.Header-banner {
-    min-height: 56px;
+.Header-banner .Header-languages {
+    min-height: 38px;
 }
 
 .Header-language {

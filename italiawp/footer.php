@@ -28,7 +28,12 @@
                 <img height="80" width="auto" class="Footer-logo" src="<?php echo $custom_logo; ?>" alt="<?php echo bloginfo('name'); ?>">
 
                 <p class="Footer-siteName">
-                    <?php bloginfo( 'name' ); ?>
+                    <?php bloginfo( 'name' );
+                          $italiawp_description = get_bloginfo('description');
+                        if ($italiawp_description || is_customize_preview()) : ?>
+                        <br>
+                        <small><?php echo $italiawp_description; ?></small>
+                        <?php endif; ?>
                 </p>
             </div>
 
@@ -46,7 +51,10 @@
                         <address>
                             <?php echo get_option('dettagli-indirizzo'); ?><br>
                             <?php echo get_option('dettagli-cap'); ?>, <?php echo get_option('dettagli-citta'); ?><br><br>
-                            C.F. / P.IVA<br><?php echo get_option('dettagli-cfpiva'); ?>
+                            C.F. / P.IVA<br><?php echo get_option('dettagli-cfpiva'); ?><br>
+                            <?php if(get_option('dettagli-codunivoco')!=""): ?>
+                                <br>Cod. Univoco<br><?php echo get_option('dettagli-codunivoco'); ?>
+                            <?php endif; ?>
                         </address>
                     </div>
                 </div>
@@ -57,7 +65,10 @@
                         <h3 class="Footer-subTitle">Recapiti</h3>
                         <address>
                             Telefono<br><a href="tel:+39<?php echo get_option('dettagli-telefono'); ?>" >(+39) <?php echo get_option('dettagli-telefono'); ?></a><br><br>
-                            Fax<br><a href="tel:+39<?php echo get_option('dettagli-fax'); ?>" >(+39) <?php echo get_option('dettagli-fax'); ?></a><br><br>
+                            <?php if(get_option('dettagli-fax')!=""): ?>
+                                Fax<br><a href="tel:+39<?php echo get_option('dettagli-fax'); ?>" >(+39) <?php echo get_option('dettagli-fax'); ?></a><br>
+                            <?php endif; ?>
+                            <br>
                         </address>
                     </div>
                 </div>

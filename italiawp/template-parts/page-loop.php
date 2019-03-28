@@ -7,7 +7,12 @@
 
 <?php
 
-if (have_posts()) : while (have_posts()) : the_post(); ?>
+if (have_posts()) : while (have_posts()) : the_post();
+
+    $img_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'news-image' );
+    if($img_url!="") {
+        $img_url = $img_url[0];
+    } ?>
 
 <div class="u-layout-wide u-layoutCenter u-text-r-l u-padding-r-top u-margin-r-bottom u-layout-r-withGutter">
     
@@ -24,6 +29,13 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
         </div>
 
         <div class="Grid-cell u-sizeFull u-md-size4of12 u-lg-size4of12">
+            
+            <?php if($img_url!="") { ?>
+            <div class="u-sizeFull u-md-size11of12 u-lg-size11of12">
+                <img src="<?php echo $img_url; ?>" class="u-sizeFull" alt="<?php the_title(); ?>">
+                <div class="u-margin-r-top"></div>
+            </div>
+            <?php } ?>
             
             <div class="u-sizeFull u-md-size11of12 u-lg-size11of12" id="subnav"> 
 

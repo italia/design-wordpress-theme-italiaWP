@@ -6,7 +6,7 @@
 ?>
 
 <?php if ( $wp_query->max_num_pages > 1 ) : ?>
-    <nav role="navigation" aria-label="Navigazione paginata" class="pagination u-layout-prose u-margin-r-top">
+    <nav role="navigation" aria-label="Navigazione paginata" class="pagination u-layout-prose u-margin-r-top u-margin-r-bottom">
         <ul class="Grid Grid--fit Grid--alignMiddle u-text-r-xxs u-textCenter">
             <li class="Grid-cell u-textCenter">
                 <?php echo get_previous_posts_link( '<span class="Icon-chevron-left u-text-r-s" role="presentation"></span><span class="u-hiddenVisually">Pagina precedente</span>' ); ?>

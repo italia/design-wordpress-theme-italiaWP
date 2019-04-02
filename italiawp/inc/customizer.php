@@ -114,6 +114,18 @@ function italiawp_customize_register($wp_customize) {
         'type' => 'checkbox', 'section' => 'pages_settings', 'settings' => 'active_immagine_evidenza_default'
     ));
     
+/* Immagine di default articoli */
+    $wp_customize->add_setting('immagine_evidenza_default', array(
+        'transport' => 'refresh',
+        'capability' => 'edit_theme_options',
+        'default' => get_bloginfo('template_url').'/images/400x220.png'
+    ));
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'immagine_evidenza_default', array(
+        'label' => 'Immagine di default articoli',
+        'section' => 'pages_settings',
+        'settings' => 'immagine_evidenza_default'
+    )));
+
 /* Stile AGID per le Immagini singole in pagine e articoli */
     $wp_customize->add_setting('disactive_stili_immagini_agid', array(
         'default' => false, 'capability' => 'edit_theme_options', 'sanitize_callback' => 'italiawp_sanitize_checkbox'

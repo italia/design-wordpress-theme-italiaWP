@@ -34,7 +34,10 @@
     if($img_url!="") {
         $link_img_url = $img_url[0];
     }else{
-        $link_img_url = get_bloginfo('template_url') . "/images/400x220.png";
+        $link_img_url = esc_url(get_theme_mod('immagine_evidenza_default'));
+        if($link_img_url=="") {
+            $link_img_url = get_bloginfo('template_url') . "/images/400x220.png";
+        }
     }
     
     $category = get_the_category(); $first_category = $category[0];

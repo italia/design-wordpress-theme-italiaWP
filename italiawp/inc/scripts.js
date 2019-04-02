@@ -11,6 +11,15 @@ $(document).ready(function () {
     $(".italiawp-sidebar > ul > li > a").addClass("Linklist-link Linklist-link--lev2");
     $(".italiawp-sidebar > ul > li > ul > li a").addClass("Linklist-link Linklist-link--lev3");
     
+    $(".italiawp-sidebar > ul > li").each(function () {
+        if( $('> span',this).length === 1 && $('> a',this).length === 1 ) {
+            var span = $(this).find('span');
+            var a = $(this).find('a');
+            span.html("<br><small>"+span.html()+"</small>");
+            a.append(span);
+        }
+    });
+    
     /* Forms */
     $(".site-content .Prose form").addClass("Form Form--spaced u-padding-all-xl u-background-grey-10 u-text-r-xs u-layout-prose");
     $(".site-content .Prose form label")

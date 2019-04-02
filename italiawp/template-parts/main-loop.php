@@ -33,8 +33,11 @@ $i = 0; if (have_posts()) :
     $img_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'news-image' );
     if($img_url!="") {
         $img_url = $img_url[0];
-    }else if(get_theme_mod('active_immagine_evidenza_default')) {	
-        $img_url = get_bloginfo('template_url') . "/images/400x220.png";	
+    }else if(get_theme_mod('active_immagine_evidenza_default')) {
+        $img_url = esc_url(get_theme_mod('immagine_evidenza_default'));
+        if($img_url=="") {
+            $img_url = get_bloginfo('template_url') . "/images/400x220.png";
+        }
     }
     
     $category = get_the_category(); $first_category = $category[0];

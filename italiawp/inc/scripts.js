@@ -20,7 +20,16 @@ $(document).ready(function () {
         }
     });
     
-    /* Forms */
+    $(".Megamenu > ul > li.Megamenu-item > a").click(function () {
+        var current = $(this);
+        if( $(this).parent().find(".Megamenu-subnav").hasClass("is-open") ) {
+            setTimeout(function(){
+                current.attr("aria-expanded","false");
+                current.parent().find(".Megamenu-subnav").removeClass("is-open");
+            },10);
+        }
+    });
+    
     $(".site-content .Prose form").addClass("Form Form--spaced u-padding-all-xl u-background-grey-10 u-text-r-xs u-layout-prose");
     $(".site-content .Prose form label")
             .addClass("Form-label").parent().addClass("Form-field");

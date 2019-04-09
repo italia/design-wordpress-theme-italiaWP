@@ -261,7 +261,7 @@ a img.aligncenter {
 /* Menu Utilità con immagine */
 
 .section.Utilities img {
-    width: calc(100% - 20px) !important;
+    max-width: calc(100% - 20px) !important;
     height: auto !important;
     border-radius: 4px !important;
 }

@@ -138,7 +138,7 @@ $(document).ready(function () {
                 }
             });
 
-    $(".owl-prev,.owl-next").addClass("u-padding-bottom-xl u-text-r-xl u-color-teal-50");
+    $(".owl-prev,.owl-next").addClass("u-padding-bottom-xl u-text-r-xl");
     $(".owl-prev span").empty().addClass("u-alignMiddle Icon Icon-arrow-left");
     $(".owl-next span").empty().addClass("u-alignMiddle Icon Icon-arrow-right");
 });

@@ -56,7 +56,7 @@ function italiawp_custom_gallery( $output = '', $atts, $instance ) {
         }
             $return .= '<figcaption class="u-padding-r-top">
             <span class="Icon Icon-camera u-color-white u-floatRight u-text-r-l" aria-hidden="true"></span>
-            <p class="u-color-teal-50 u-text-r-xxs u-textWeight-700 u-padding-bottom-xs">Foto</p>
+            <p class="u-text-r-xxs u-textWeight-700 u-padding-bottom-xs">Foto</p>
             <p class="u-color-white u-text-r-xxs">'.date('j F Y',strtotime($attachment_meta['date'])).'</p>
         </figcaption>
     </figure>';
@@ -181,7 +181,7 @@ if (!get_theme_mod('disactive_stili_immagini_agid')) {
                 <img src="' . $imgSrc . '" class="u-sizeFull" alt="' . $imgAlt . '">
                 <figcaption class="u-padding-r-top">
                     <span class="Icon Icon-camera u-color-white u-floatRight u-text-r-l" aria-hidden="true"></span>
-                    <p class="u-color-teal-50 u-text-r-xxs u-textWeight-700 u-padding-bottom-xs">' . $imgTitle . '</p>
+                    <p class="u-text-r-xxs u-textWeight-700 u-padding-bottom-xs">' . $imgTitle . '</p>
                     <p class="u-color-white u-text-r-xxs">' . date('j F Y',strtotime($imgDate)) . '</p>
                 </figcaption>
             </figure>';

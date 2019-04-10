@@ -51,7 +51,7 @@
                         </a>
                         <figcaption class="u-padding-r-top">
                             <span class="Icon Icon-camera u-color-white u-floatRight u-text-r-l" aria-hidden="true"></span>
-                            <p class="u-color-teal-50 u-text-r-xxs u-textWeight-700 u-padding-bottom-xs">Foto</p>
+                            <p class="u-text-r-xxs u-textWeight-700 u-padding-bottom-xs">Foto</p>
                             <p class="u-color-white u-text-r-xxs"><?php echo $datapost; ?></p>
                         </figcaption>
                     </figure>

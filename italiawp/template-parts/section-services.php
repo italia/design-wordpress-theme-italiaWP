@@ -21,7 +21,7 @@
                         'container_class' => 'box-servizi Grid-cell u-sm-size1of3 u-md-size1of3 u-lg-size1of3',
                         'menu_class'      => '',
                         'echo'            => false,
-                        'link_before'     => '<div class="Entrypoint-item u-sizeFill u-background-teal-70">',
+                        'link_before'     => '<div class="Entrypoint-item u-sizeFill u-background-95">',
                         'link_after'      => '</div>'
                     );
                     echo strip_tags(wp_nav_menu($menu),"<div><a><img>");
@@ -34,7 +34,7 @@
                         'container_class' => 'box-servizi Grid-cell u-sm-size1of3 u-md-size1of3 u-lg-size1of3',
                         'menu_class'      => '',
                         'echo'            => false,
-                        'link_before'     => '<div class="Entrypoint-item u-sizeFill u-background-teal-70">',
+                        'link_before'     => '<div class="Entrypoint-item u-sizeFill u-background-95">',
                         'link_after'      => '</div>'
                     );
                     echo strip_tags(wp_nav_menu($menu),"<div><a><img>");
@@ -47,7 +47,7 @@
                         'container_class' => 'box-servizi Grid-cell u-sm-size1of3 u-md-size1of3 u-lg-size1of3',
                         'menu_class'      => '',
                         'echo'            => false,
-                        'link_before'     => '<div class="Entrypoint-item u-sizeFill u-background-teal-70">',
+                        'link_before'     => '<div class="Entrypoint-item u-sizeFill u-background-95">',
                         'link_after'      => '</div>'
                     );
                     echo strip_tags(wp_nav_menu($menu),"<div><a><img>");
@@ -62,7 +62,7 @@
                         'container_class' => 'box-servizi Grid-cell u-sm-size1of3 u-md-size1of3 u-lg-size1of3',
                         'menu_class'      => '',
                         'echo'            => false,
-                        'link_before'     => '<div class="Entrypoint-item u-sizeFill u-background-grey-40">',
+                        'link_before'     => '<div class="Entrypoint-item u-sizeFill u-background-50">',
                         'link_after'      => '</div>'
                     );
                     echo strip_tags(wp_nav_menu($menu),"<div><a><img>");
@@ -75,7 +75,7 @@
                         'container_class' => 'box-servizi Grid-cell u-sm-size1of3 u-md-size1of3 u-lg-size1of3',
                         'menu_class'      => '',
                         'echo'            => false,
-                        'link_before'     => '<div class="Entrypoint-item u-sizeFill u-background-grey-40">',
+                        'link_before'     => '<div class="Entrypoint-item u-sizeFill u-background-50">',
                         'link_after'      => '</div>'
                     );
                     echo strip_tags(wp_nav_menu($menu),"<div><a><img>");
@@ -88,7 +88,7 @@
                         'container_class' => 'box-servizi Grid-cell u-sm-size1of3 u-md-size1of3 u-lg-size1of3',
                         'menu_class'      => '',
                         'echo'            => false,
-                        'link_before'     => '<div class="Entrypoint-item u-sizeFill u-background-grey-40">',
+                        'link_before'     => '<div class="Entrypoint-item u-sizeFill u-background-50">',
                         'link_after'      => '</div>'
                     );
                     echo strip_tags(wp_nav_menu($menu),"<div><a><img>");
@@ -103,7 +103,7 @@
                         'container_class' => 'box-servizi Grid-cell u-sm-size1of3 u-md-size1of3 u-lg-size1of3',
                         'menu_class'      => '',
                         'echo'            => false,
-                        'link_before'     => '<div class="Entrypoint-item u-sizeFill u-background-50">',
+                        'link_before'     => '<div class="Entrypoint-item u-sizeFill u-background-grey-50">',
                         'link_after'      => '</div>'
                     );
                     echo strip_tags(wp_nav_menu($menu),"<div><a><img>");
@@ -116,7 +116,7 @@
                         'container_class' => 'box-servizi Grid-cell u-sm-size1of3 u-md-size1of3 u-lg-size1of3',
                         'menu_class'      => '',
                         'echo'            => false,
-                        'link_before'     => '<div class="Entrypoint-item u-sizeFill u-background-50">',
+                        'link_before'     => '<div class="Entrypoint-item u-sizeFill u-background-grey-50">',
                         'link_after'      => '</div>'
                     );
                     echo strip_tags(wp_nav_menu($menu),"<div><a><img>");
@@ -129,7 +129,7 @@
                         'container_class' => 'box-servizi Grid-cell u-sm-size1of3 u-md-size1of3 u-lg-size1of3',
                         'menu_class'      => '',
                         'echo'            => false,
-                        'link_before'     => '<div class="Entrypoint-item u-sizeFill u-background-50">',
+                        'link_before'     => '<div class="Entrypoint-item u-sizeFill u-background-grey-50">',
                         'link_after'      => '</div>'
                     );
                     echo strip_tags(wp_nav_menu($menu),"<div><a><img>");

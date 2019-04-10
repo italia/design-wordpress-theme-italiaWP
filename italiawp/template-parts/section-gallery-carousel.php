@@ -6,7 +6,7 @@
  */
 ?>
 
-<div class="u-layout-centerContent u-background-grey-60 u-padding-r-top section">
+<div class="u-layout-centerContent u-background-95 u-padding-r-top section-gallery section">
 
     <section class="u-padding-r-all">
         <div class="u-layout-medium u-layoutCenter">
@@ -49,7 +49,7 @@ if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->t
                                 <img src="<?php print $img_url; ?>" class="u-sizeFull" alt="<?php the_title(); ?>" />
                             </a>
                             <figcaption class="u-padding-r-top">
-                                <p class="u-color-teal-50 u-text-r-xxs u-textWeight-700 u-padding-bottom-s">Foto</p>
+                                <p class="u-text-r-xxs u-textWeight-700 u-padding-bottom-s">Foto</p>
                                 <p class="u-color-white u-text-r-xxs u-margin-bottom-s"><?php echo $datapost; ?></p>
                                 <div class="Grid">
                                     <span class="Grid-cell u-sizeFit Icon-camera u-color-white u-floatLeft u-text-r-l" aria-hidden="true"></span>
@@ -72,7 +72,7 @@ if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->t
 
             </div>
             <p class="u-padding-r-top u-text-r-xl">
-                <a href="<?php echo get_post_type_archive_link('gallerie'); ?>" class="u-layout-centerLeft u-padding-r-top u-text-h4 u-textWeight-700 u-color-teal-50">Vedi tutte le gallerie</a>
+                <a href="<?php echo get_post_type_archive_link('gallerie'); ?>" class="u-layout-centerLeft u-padding-r-top u-text-h4 u-textWeight-700">Vedi tutte le gallerie</a>
             </p>
         </div>
     </section>

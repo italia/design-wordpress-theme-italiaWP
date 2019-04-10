@@ -357,7 +357,8 @@ function italiawp_dymanic_styles() {
   background-color: {$color_compl_80} !important;
 }
 
-.Footer a, .CookieBar a {
+.Footer a, .CookieBar a, .section-gallery a,
+.owl-prev, .owl-next, figure figcaption > p:first-of-type {
   color: {$color_compl_link_footer} !important;
 }
 

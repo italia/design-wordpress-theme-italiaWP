@@ -126,12 +126,10 @@
                 <!-- Per favore, non rimuoverlo! -->
                 <?php 
                 $main_theme = wp_get_theme(get_template());
-                $main_theme_author = $main_theme->get('Author');
-                $main_theme_author_uri = $main_theme->get('AuthorURI');
                 $main_theme_name = $main_theme->get('Name');
                 $main_theme_uri = $main_theme->get('ThemeURI');
                  ?>
-                <li>Tema <a target="_blank" href="<?php echo $main_theme_uri; ?>"><?php echo $main_theme_name; ?></a> di <a target="_blank" href="<?php echo $main_theme_author_uri; ?>"><?php echo $main_theme_author; ?></a></li>
+                <li>Tema grafico <a target="_blank" href="<?php echo $main_theme_uri; ?>"><?php echo $main_theme_name; ?></a></li>
                 <li>Basato sul <a target="_blank" href="https://italia.github.io/design-web-toolkit/">Web Toolkit AGID</a></li>
                 <!-- Grazie :) -->
                 

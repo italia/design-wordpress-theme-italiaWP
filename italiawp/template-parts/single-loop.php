@@ -23,9 +23,9 @@ if (have_posts()) : while (have_posts()) : the_post();
     $datapost = get_the_date('j F Y', '', ''); ?>
 
 <div class="u-layout-wide u-layoutCenter u-text-r-l u-padding-r-top u-margin-r-bottom u-layout-r-withGutter">
-    <section class="Grid">
+    <section class="Grid Grid--withGutter">
 
-        <div class="Grid-cell u-sizeFull u-md-size1of2 u-lg-size1of2 u-text-r-s u-padding-r-all">
+        <div class="Grid-cell u-md-size8of12 u-lg-size8of12">
             <div class="Grid Grid--fit u-margin-r-bottom">
                 <p class="Grid-cell">
                     <span class="Dot u-background-50"></span>
@@ -33,21 +33,19 @@ if (have_posts()) : while (have_posts()) : the_post();
                 </p>
                 <p class="Grid-cell u-textSecondary"><?php echo $datapost; ?></p>
             </div>
-            <div class="u-text-r-l u-layout-prose">
+            <div class="Prose u-layout-prose">
                 <h2 class="u-text-h2 u-margin-r-bottom">
                     <a class="u-text-h2 u-textClean u-color-black" href="<?php the_permalink(); ?>">
                         <?php the_title(); ?>
                     </a>
                 </h2>
-                <p class="u-textSecondary u-lineHeight-l">
-                    <?php the_content(); ?>
-                    <?php if (get_theme_mod('active_allegati_contenuto'))
-                        get_template_part('template-parts/attachments'); ?>
-                </p>
+                <?php the_content(); ?>
+                <?php if (get_theme_mod('active_allegati_contenuto'))
+                    get_template_part('template-parts/attachments'); ?>
             </div>
         </div>
 
-        <div class="Grid-cell u-sizeFull u-md-size1of2 u-lg-size1of2 u-text-r-s u-padding-r-all">
+        <div class="Grid-cell u-sizeFull u-md-size4of12 u-lg-size4of12">
             <?php if($img_url!="") { ?>
             <div class="u-sizeFull u-md-size11of12 u-lg-size11of12">
                 <img src="<?php echo $img_url; ?>" class="u-sizeFull" alt="<?php the_title(); ?>">

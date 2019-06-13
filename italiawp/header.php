@@ -56,7 +56,6 @@
     
     <script src="<?php bloginfo('template_url'); ?>/webtoolkit/jquery.min.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/inc/magnific-popup/jquery.magnific-popup.min.js"></script>
-    
 </head>
 
 <body class="t-Pac">
@@ -71,10 +70,10 @@
         </p>
     </div>
 
-    <?php include_once('menu.php'); ?>
+    <?php get_template_part('menu'); ?>
 
     <div id="main" class="site-content">
         
     <?php if(!is_attachment()) italiawp_create_breadcrumbs(); ?>
 
-    <?php include_once('home-sections.php'); ?>
+    <?php get_template_part('home-sections'); ?>

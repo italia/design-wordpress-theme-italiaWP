@@ -54,7 +54,9 @@
                 } ?>
     </div>
     
+    <?php if(has_nav_menu('box-servizi-4') || has_nav_menu('box-servizi-5') || has_nav_menu('box-servizi-6')) { ?>
     <div class="Grid Grid--withGutter u-padding-top-xl">
+    <?php } ?>
         <?php   if(has_nav_menu('box-servizi-4')) {
                     $menu = array(
                         'theme_location'  => 'box-servizi-4',
@@ -95,7 +97,9 @@
                 } ?>
     </div>
     
+    <?php if(has_nav_menu('box-servizi-7') || has_nav_menu('box-servizi-8') || has_nav_menu('box-servizi-9')) { ?>
     <div class="Grid Grid--withGutter u-padding-top-xl">
+    <?php } ?>
         <?php   if(has_nav_menu('box-servizi-7')) {
                     $menu = array(
                         'theme_location'  => 'box-servizi-7',

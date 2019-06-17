@@ -1,3 +1,7 @@
+.Hero {
+    background-position: center;
+}
+
 @media (max-width: 767px) {
     #main > * {
         overflow: hidden !important;

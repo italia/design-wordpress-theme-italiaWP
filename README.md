@@ -85,6 +85,9 @@ Dalla versione **1.3.5** la sezione **gallerie fotografiche** in homepage è att
 **--IMPORTANTE!--**
 Dalla versione **1.4.1** è possibile inserire delle immagini nei menu **box servizi** e **utilità** tramite i _Link personalizzati_ e inserendo direttamente il tag html **< img src="URL" >** nel _Testo del link_
 
+**--IMPORTANTE!--**
+Dalla versione **1.5.3** è possibile inserire delle immagini sotto forma di icona nel menu **box servizi** inserendo direttamente il tag html **< img class="icona" src="URL" >** nel _Testo del link_
+
 ---
 
 ## Plugin Wordpress:

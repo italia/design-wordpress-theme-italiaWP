@@ -316,6 +316,7 @@ a img.aligncenter {
     max-width: calc(100% - 20px) !important;
     height: auto !important;
     border-radius: 4px !important;
-    width: auto !important;
+    width: 32px !important;
     margin: -5px 0 0 !important;
+    vertical-align: middle;
 }

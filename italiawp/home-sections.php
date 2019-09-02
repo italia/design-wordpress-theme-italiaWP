@@ -17,4 +17,27 @@
                 get_template_part('template-parts/section-gallery-carousel');
             endif;
         endif;
-    endif; ?>
+    endif; 
+    
+    if( get_the_content() != "" ) { ?>
+
+<div class="u-background-white u-color-black u-text-xxl section">
+    <div class="u-layout-wide u-layoutCenter u-layout-r-withGutter section Content">
+        <section class="u-padding-r-top u-padding-r-bottom">
+            <section class="Grid Grid--withGutter">
+                <div class="Grid-cell">
+                    <?php the_content(); ?>
+                </div>
+            </section>
+        </section>
+    </div>
+    
+    <?php if (is_front_page()): ?>
+    <div class="Forward Forward--floating u-color-70" aria-hidden="true">
+        <span class="Icon Icon-expand"></span>
+    </div>
+    <?php endif; ?>
+    
+</div>
+
+<?php } ?>

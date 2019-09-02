@@ -387,3 +387,31 @@ function italiawp_metabox_menu_pt_archive() {
 
     endif;
 }
+
+add_action('pre_get_posts','my_date_search');
+function my_date_search() {
+    if (is_search()) {
+        $original_query = get_search_query();
+        
+        $months = array(1 => "Gennaio", 2 => "Febbraio", 3 => "Marzo", 4 => "Aprile", 5 => "Maggio", 6 => "Giugno", 7 => "Luglio", 8 => "Agosto", 9 => "Settembre", 10 => "Ottobre", 11 => "Novembre", 12 => "Dicembre");
+
+        foreach ($months as $month => $month_name) {
+            if (stristr($original_query, $month_name)) {
+                $m = $month;
+                preg_match('/(19[0-9][0-9]|20[0-9][0-9])/', $original_query, $year);
+                if ($year)
+                    $y = $year[0];
+                preg_match('/^[0-3]{0,1}[0-9]{1} /', $original_query, $day);
+                if ($day)
+                    $d = $day[0];
+            }
+        }
+        
+        if (isset($m) && isset($y)) {
+            $paged = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
+            if(!isset($d)) $d = "";
+            $new_query = 'year=' . $y . '&monthnum=' . $m . '&day=' . $d . '&paged=' . $paged;
+            query_posts($new_query);
+        }
+    }
+}

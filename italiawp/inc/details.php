@@ -3,7 +3,7 @@
 //Custom Settings
 add_action('admin_menu', 'italiawp_add_custom_interface');
 function italiawp_add_custom_interface() {
-	add_menu_page('Dettagli', 'Dettagli', '0', 'functions', 'italiawp_edit_custom_settings');
+    add_menu_page('Dettagli', 'Dettagli', 'manage_options', 'functions', 'italiawp_edit_custom_settings');
 }
 
 function italiawp_edit_custom_settings() { ?>

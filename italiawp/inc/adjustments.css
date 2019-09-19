@@ -320,3 +320,11 @@ a img.aligncenter {
     margin: -5px 0 0 !important;
     vertical-align: middle;
 }
+
+.Form-input:not(.is-disabled), .Form-input:not(:disabled) {
+    color: #000;
+}
+
+.Footer .Form-input:not(.is-disabled), .Footer .Form-input:not(:disabled) {
+    color: #fff;
+}

@@ -316,7 +316,8 @@ function italiawp_dymanic_styles() {
 }
 
 .u-background-95,
-.ScrollTop, .mfp-bg, mfp-img {
+.ScrollTop, .mfp-bg, mfp-img,
+.Footer .Form-input:not(.is-disabled), .Footer .Form-input:not(:disabled) {
   background-color: {$color_95} !important;
 }
 

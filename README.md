@@ -15,6 +15,12 @@
 
 ---
 
+E' in lavorazione la **versione 2** di **ItaliaWP**, perfettamente compatibile con la versione attuale, che utilizza [**Bootstrap Italia**](https://italia.github.io/bootstrap-italia/) come framework grafico, sulla base del prototipo di [**Sito web dei Comuni Italiani**](https://italia.github.io/design-comuni-prototipi/it/esempi.html).
+
+#### [**Guarda la demo (v.2 alpha)**](http://italiawp.borisamico.it/demo2)
+
+---
+
 ## Installare _ItaliaWP_:
 
 1. Scaricare il file [.zip](https://raw.githubusercontent.com/italia/design-wordpress-theme-wt/master/italiawp.zip) in locale

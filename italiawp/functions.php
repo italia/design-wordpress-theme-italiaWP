@@ -5,6 +5,8 @@ function italiawp_adjustments_css() {
     wp_enqueue_style('italiawp_adjustments_css', get_template_directory_uri() . '/inc/adjustments.css');
 }
 
+add_post_type_support('page','excerpt');
+
 add_theme_support('post-thumbnails');
 add_image_size('post-thumbnails',512,512,array('center','center'));
 add_image_size('news-image',400,220,array('center','center'));
@@ -205,29 +207,23 @@ function italiawp_create_breadcrumbs() {
     }
 }
 
-add_filter('the_excerpt', function ($excerpt) {
-    if ( has_excerpt() ) {
-        return $excerpt;
-    } else {
-        return substr(strip_shortcodes($excerpt), 0, strpos(strip_shortcodes($excerpt), '.') + 1);
-    }
-});
+function custom_excerpt_length( $length ) {
+    return 300;
+}
+add_filter('excerpt_length','custom_excerpt_length', 999 );
 
-add_filter('get_the_excerpt', function ($excerpt) {
+function my_excerpt($excerpt='') {
+    $excerpt = strip_shortcodes($excerpt);
     if ( has_excerpt() ) {
         return $excerpt;
     } else {
-        if (strpos($excerpt, '.') === false) {
-            if(strlen(strip_shortcodes($excerpt))>115) {
-                return substr(strip_shortcodes($excerpt), 0, 115);
-            }else{
-                return strip_shortcodes($excerpt);
-            }
-        }else{
-            return substr(strip_shortcodes($excerpt), 0, strpos(strip_shortcodes($excerpt), '.') + 1);
-        }
+        $pos1 = strpos($excerpt, '.');
+        $pos2 = strpos($excerpt, '.', $pos1 + 1);
+        if($pos1 < 50) return substr($excerpt, 0, $pos2 + 1);
+        else return substr($excerpt, 0, $pos1 + 1);
     }
-});
+}
+add_filter('get_the_excerpt', 'my_excerpt');
 
 /* UPDATER THEME VERSION */
 require 'inc/theme-update-checker.php';

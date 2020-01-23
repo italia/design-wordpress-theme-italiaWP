@@ -79,7 +79,9 @@
                         <h3 class="Footer-subTitle">Indirizzi Email</h3>
                         <address>
                             PEC<br><a href="mailto:<?php echo get_option('dettagli-pec'); ?>" ><?php echo get_option('dettagli-pec'); ?></a><br><br>
+                        <?php if(get_option('dettagli-email')!=""): ?>
                             Email<br><a href="mailto:<?php echo get_option('dettagli-email'); ?>" ><?php echo get_option('dettagli-email'); ?></a><br><br>
+                        <?php endif; ?>
                         <?php if(get_option('dettagli-email2')!=""): ?>
                             Email<br><a href="mailto:<?php echo get_option('dettagli-email2'); ?>" ><?php echo get_option('dettagli-email2'); ?></a>
                         <?php endif; ?>

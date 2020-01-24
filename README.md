@@ -94,6 +94,9 @@ Dalla versione **1.4.1** è possibile inserire delle immagini nei menu **box ser
 **--IMPORTANTE!--**
 Dalla versione **1.5.3** è possibile inserire delle immagini sotto forma di icona nel menu **box servizi** inserendo direttamente il tag html **< img class="icona" src="URL" >** nel _Testo del link_
 
+**--IMPORTANTE!--**
+Dalla versione **1.6.1** è possibile inserire i meta tag personalizzati **"keywords"** e **"description"** nella pagina _"Dettagli"_ del backend di WordPress
+
 ---
 
 ## Plugin Wordpress:

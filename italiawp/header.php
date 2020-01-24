@@ -10,8 +10,15 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="keywords" content="">
+    <?php if(get_option('custom-meta-keywords')!=""): ?>
+    <meta name="keywords" content="<?php echo get_option('custom-meta-keywords'); ?>">
+    <?php endif; ?>
+    
+    <?php if(get_option('custom-meta-description')!=""): ?>
+    <meta name="description" content="<?php echo get_option('custom-meta-description'); ?>">
+    <?php else: ?>
     <meta name="description" content="<?php echo get_bloginfo('description'); ?>">
+    <?php endif; ?>
 
     <?php if (is_front_page()) { ?>
         <title><?php bloginfo('name'); ?></title>

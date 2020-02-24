@@ -29,7 +29,7 @@ E' in lavorazione la **versione 2** di **ItaliaWP**, perfettamente compatibile c
 4. Scegliere il file .zip scaricato in precedenza, senza decomprimerlo e cliccare _"Installa ora"_
 5. Selezionare _"Attiva"_ per poter utilizzare il tema
 
-_[ Testato su **WordPress 5** (ma ancora **NON COMPATIBILE** con il nuovo editor **Gutenberg!!!**) | **PHP 5.6.37** ]_
+_[ Testato su **WordPress 5.3.2** (**COMPATIBILE** con il nuovo editor **Gutenberg** [in test]) | **PHP 7.3.14** ]_
 
 ## --IMPORTANTE!-- Dopo l'aggiornamento a _WordPress 5_:
 
@@ -96,6 +96,9 @@ Dalla versione **1.5.3** è possibile inserire delle immagini sotto forma di ico
 
 **--IMPORTANTE!--**
 Dalla versione **1.6.1** è possibile inserire i meta tag personalizzati **"keywords"** e **"description"** nella pagina _"Dettagli"_ del backend di WordPress
+
+**--IMPORTANTE!--**
+Dalla versione **1.6.2** è stata aggiunto un primo livello di compatibilità con l'editor Gutenberg (sarà migliorato)
 
 ---
 

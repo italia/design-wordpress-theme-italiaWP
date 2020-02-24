@@ -64,6 +64,18 @@ function italiawp_dymanic_styles() {
     $color_compl_80 = colorSetSL(colorCompl($main_color), 100, 40);
     
     $color_compl_link_footer = colorSetSL($main_color, 100, 80);
+    
+    if(get_option('italiawp_colore_primario')) update_option('italiawp_colore_primario',$color_50);
+    else add_option('italiawp_colore_primario',$color_50);
+    
+    if(get_option('italiawp_colore_primario_chiaro')) update_option('italiawp_colore_primario_chiaro',$color_30);
+    else add_option('italiawp_colore_primario_chiaro',$color_30);
+    
+    if(get_option('italiawp_colore_primario_scuro')) update_option('italiawp_colore_primario_scuro',$color_95);
+    else add_option('italiawp_colore_primario_scuro',$color_95);
+    
+    if(get_option('italiawp_colore_complementare')) update_option('italiawp_colore_complementare',$color_compl);
+    else add_option('italiawp_colore_complementare',$color_compl);
 
     $custom_css = "
 .u-color-black {
@@ -230,11 +242,11 @@ function italiawp_dymanic_styles() {
   background-color: {$color_20} !important;
 }
 
-.u-color-30 {
+.u-color-30, .has-colore-primario-chiaro-color {
   color: {$color_30} !important;
 }
 
-.u-background-30 {
+.u-background-30, .has-colore-primario-chiaro-background-color {
   background-color: {$color_30} !important;
 }
 
@@ -252,14 +264,16 @@ function italiawp_dymanic_styles() {
 .Accordion--default .Accordion-link, .Accordion--plus .Accordion-link,
 .ErrorPage-subtitle, .ErrorPage-title, .Header-language-other a,
 .Linklist-link, .Linklist a, .Share-revealIcon.is-open, .Skiplinks>li>a,
-.Header-socialIcons [class*=\" Icon-\"], .Header-socialIcons [class^=Icon-] {
+.Header-socialIcons [class*=\" Icon-\"], .Header-socialIcons [class^=Icon-],
+.has-colore-primario-color {
   color: {$color_50} !important;
 }
 
 .u-background-50,
 .Header-navbar,
 .Bullets>li:before, .Share-revealIcon, .Share>ul>li,
-.Header-searchTrigger button {
+.Header-searchTrigger button,
+.has-colore-primario-background-color {
   background-color: {$color_50} !important;
 }
 
@@ -311,13 +325,14 @@ function italiawp_dymanic_styles() {
 .Treeview--default li[aria-expanded=true] li a:hover, .Treeview--default li[aria-expanded=true] li li a,
 .Treeview--default li[aria-expanded=true] li li a:hover, #wp-calendar a,
 .Footer-socialIcons [class*=Icon-], .Footer-socialIcons [class^=Icon-],
-.Button--default {
+.Button--default, .has-colore-primario-scuro-color {
   color: {$color_95} !important;
 }
 
 .u-background-95,
 .ScrollTop, .mfp-bg, mfp-img,
-.Footer .Form-input:not(.is-disabled), .Footer .Form-input:not(:disabled) {
+.Footer .Form-input:not(.is-disabled), .Footer .Form-input:not(:disabled),
+.has-colore-primario-scuro-background-color {
   background-color: {$color_95} !important;
 }
 
@@ -325,11 +340,11 @@ function italiawp_dymanic_styles() {
   background-color: transparent !important;
 }
 
-.u-color-compl {
+.u-color-compl, .has-colore-complementare-color {
   color: {$color_compl} !important;
 }
 
-.u-background-compl {
+.u-background-compl, .has-colore-complementare-background-color {
   background-color: {$color_compl} !important;
 }
 

@@ -114,6 +114,7 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/style.php';
 require get_template_directory() . '/inc/gallery.php';
 require get_template_directory() . '/inc/details.php';
+require get_template_directory() . '/inc/gutenberg.php';
 
 function italiawp_create_breadcrumbs() {
 

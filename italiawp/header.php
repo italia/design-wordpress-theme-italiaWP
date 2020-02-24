@@ -29,6 +29,7 @@
     <link media="all" rel="stylesheet" href="<?php bloginfo('template_url'); ?>/webtoolkit/build.css">
     <link media="all" rel="stylesheet" href="<?php bloginfo('template_url'); ?>/inc/magnific-popup/magnific-popup.css">
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+    <link media="all" rel="stylesheet" href="<?php bloginfo('template_url'); ?>/inc/gutenberg.css">
     
     <?php $custom_logo_id = get_theme_mod( 'custom_logo' );
           $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' ); ?>

@@ -220,8 +220,10 @@ function my_excerpt($excerpt='') {
     } else {
         $pos1 = strpos($excerpt, '.');
         $pos2 = strpos($excerpt, '.', $pos1 + 1);
-        if($pos1 < 50) return substr($excerpt, 0, $pos2 + 1);
-        else return substr($excerpt, 0, $pos1 + 1);
+        if($pos1||$pos2) {
+            if($pos1 < 50) return substr($excerpt, 0, $pos2 + 1);
+            else return substr($excerpt, 0, $pos1 + 1);
+        } return '';
     }
 }
 add_filter('get_the_excerpt', 'my_excerpt');

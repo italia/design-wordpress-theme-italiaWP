@@ -78,6 +78,9 @@ function italiawp_edit_custom_settings() { ?>
             
             <p><strong>Cod. Univoco:</strong><br />
                 <input type="text" name="dettagli-codunivoco" size="100" value="<?php echo get_option('dettagli-codunivoco'); ?>" /></p>
+            
+            <p><strong>IBAN:</strong><br />
+                <input type="text" name="dettagli-iban" size="27" value="<?php echo get_option('dettagli-iban'); ?>" /></p>
 
             <h3>Link Social</h3>
             
@@ -106,7 +109,8 @@ function italiawp_edit_custom_settings() { ?>
                                                             dettagli-indirizzo,dettagli-cap,dettagli-citta,dettagli-telefono,dettagli-fax,
                                                             dettagli-email,dettagli-pec,dettagli-cfpiva,dettagli-facebook,
                                                             dettagli-twitter,dettagli-youtube,dettagli-instagram,dettagli-map,
-                                                            dettagli-email2,dettagli-url-accedi,dettagli-codunivoco" />
+                                                            dettagli-email2,dettagli-url-accedi,dettagli-codunivoco,
+                                                            dettagli-iban" />
 
         </form>
     </div>

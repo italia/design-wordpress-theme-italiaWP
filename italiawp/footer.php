@@ -51,9 +51,12 @@
                         <address>
                             <?php echo get_option('dettagli-indirizzo'); ?><br>
                             <?php echo get_option('dettagli-cap'); ?>, <?php echo get_option('dettagli-citta'); ?><br><br>
-                            C.F. / P.IVA<br><?php echo get_option('dettagli-cfpiva'); ?><br>
+                            C.F. / P.IVA<br><?php echo get_option('dettagli-cfpiva'); ?>
                             <?php if(get_option('dettagli-codunivoco')!=""): ?>
-                                <br>Cod. Univoco<br><?php echo get_option('dettagli-codunivoco'); ?>
+                                <br><br>Cod. Univoco<br><?php echo get_option('dettagli-codunivoco'); ?>
+                            <?php endif; ?>
+                            <?php if(get_option('dettagli-iban')!=""): ?>
+                                <br><br>IBAN<br><?php echo get_option('dettagli-iban'); ?>
                             <?php endif; ?>
                         </address>
                     </div>

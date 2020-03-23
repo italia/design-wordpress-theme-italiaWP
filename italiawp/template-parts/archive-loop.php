@@ -50,7 +50,16 @@
                             </a>
                             <?php } ?>
                             <div class="u-text-r-l u-padding-r-all u-layout-prose">
-                                <p class="u-text-h6 u-margin-bottom-l"><a class="u-color-50 u-textClean" href="<?php echo get_category_link($first_category); ?>"><?php echo $first_category->name; ?></a>
+                                <p class="u-text-h6 u-margin-bottom-l">
+                                <?php
+                                if (!empty($category)) {
+                                    $i = 0;
+                                    foreach ($category as $cat) {
+                                        if($i) echo ' - ';
+                                        $i++;
+                                        echo '<a class="u-color-50 u-textClean" href="' . esc_url(get_category_link($cat->term_id)) . '" title="' . esc_html($cat->name) . '">' . esc_html($cat->name) . '</a>';
+                                    }
+                                } ?>
                                 <span class="u-text-r-xxs u-textSecondary u-textWeight-400 u-lineHeight-xl u-cf"><?php echo $datapost; ?></span></p>
                                 <h3 class="u-text-h4 u-margin-r-bottom"><a class="u-text-r-m u-color-black u-textWeight-400 u-textClean" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                                 <p class="u-text-p u-textSecondary"><?php echo(get_the_excerpt()); ?></p>

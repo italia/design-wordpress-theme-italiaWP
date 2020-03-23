@@ -27,7 +27,16 @@ if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->t
 <div class="Hero site-header">
     <div class="Hero-content">
         <p class="u-padding-r-bottom u-padding-r-top u-text-r-xs">
-            <a href="<?php echo get_category_link($first_category); ?>" class="u-textClean u-color-60 u-text-h4"><span class="Dot u-background-60"></span><?php echo $first_category->name; ?></a>
+            <span class="Dot u-background-60"></span>
+            <?php
+            if (!empty($category)) {
+                $i = 0;
+                foreach ($category as $cat) {
+                    if($i) echo ' - ';
+                    $i++;
+                    echo '<a class="u-textClean u-color-60 u-text-h4" href="' . esc_url(get_category_link($cat->term_id)) . '" title="' . esc_html($cat->name) . '">' . esc_html($cat->name) . '</a>';
+                }
+            } ?>
         </p>
         <h2 class="u-text-h2"><a href="<?php the_permalink(); ?>" class="u-color-95 u-textClean"><?php the_title(); ?></a></h2>
         <p class="u-padding-r-bottom u-padding-r-top u-text-p u-margin-r-bottom"><?php echo(get_the_excerpt()); ?></p>

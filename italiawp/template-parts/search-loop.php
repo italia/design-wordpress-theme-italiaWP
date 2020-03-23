@@ -35,7 +35,15 @@
                         <div class="u-color-grey-30 u-border-top-xxs u-padding-right-xxl u-padding-r-all">
                             <p class="u-padding-r-bottom">
                                 <span class="Dot u-background-70"></span>
-                                <a class="u-textClean u-textWeight-700 u-text-r-xs u-color-50" href="<?php echo get_category_link($first_category); ?>"><?php echo $first_category->name; ?></a>
+                                <?php
+                                if (!empty($category)) {
+                                    $i = 0;
+                                    foreach ($category as $cat) {
+                                        if($i) echo ' - ';
+                                        $i++;
+                                        echo '<a class="u-textClean u-textWeight-700 u-text-r-xs u-color-50" href="' . esc_url(get_category_link($cat->term_id)) . '" title="' . esc_html($cat->name) . '">' . esc_html($cat->name) . '</a>';
+                                    }
+                                } ?>
                                 <span class="u-text-r-xxs u-textSecondary u-textWeight-400 u-lineHeight-xl u-cf"><?php echo $datapost; ?></span>
                             </p>
                             <h3 class="u-padding-r-top u-padding-r-bottom">

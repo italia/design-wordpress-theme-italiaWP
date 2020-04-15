@@ -242,6 +242,14 @@ a img.aligncenter {
     margin-right: auto;
 }
 
+img.size-full,
+img.size-large,
+img.size-medium,
+img.size-thumbnail {
+    max-width: 100%;
+    height: auto;
+}
+
 .owl-prev,.owl-next {
     cursor: pointer !important;
 }

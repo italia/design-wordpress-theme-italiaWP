@@ -29,8 +29,6 @@ function italiawp_css_strip_whitespace($css){
 }
 
 function italiawp_dymanic_styles() {
-    $main_color = get_option('italiawp_main_color', '#06c');
-
     $color_black = "#000";
     $color_white = "#fff";
     $color_grey_10 = "#f5f5f0";
@@ -45,25 +43,31 @@ function italiawp_dymanic_styles() {
     $color_teal_30 = "#00c5ca";
     $color_teal_50 = "#65dcdf";
     $color_teal_70 = "#004a4d";
+    
+    $main_color = get_option('italiawp_main_color', '#06c');
+    $main_color_HSL = hex2hsl($main_color);
 
-    $color_5 = colorChangeSL($main_color, -50, +50);
-    $color_10 = colorChangeSL($main_color, -40, +40);
-    $color_20 = colorChangeSL($main_color, -30, +30);
-    $color_30 = colorChangeSL($main_color, -20, +20);
-    $color_40 = colorChangeSL($main_color, -15, +8);
+    $color_5 = hsl2hex(array($main_color_HSL[0], $main_color_HSL[1]-50/100, $main_color_HSL[2]+50/100 ));
+    $color_10 = hsl2hex(array($main_color_HSL[0], $main_color_HSL[1]-40/100, $main_color_HSL[2]+40/100 ));
+    $color_20 = hsl2hex(array($main_color_HSL[0], $main_color_HSL[1]-30/100, $main_color_HSL[2]+30/100 ));
+    $color_30 = hsl2hex(array($main_color_HSL[0], $main_color_HSL[1]-20/100, $main_color_HSL[2]+20/100 ));
+    $color_40 = hsl2hex(array($main_color_HSL[0], $main_color_HSL[1]-15/100, $main_color_HSL[2]+8/100 ));
+    
     $color_50 = $main_color;
-    $color_60 = colorChangeSL($main_color, 0, -5);
-    $color_70 = colorChangeSL($main_color, 0, -10);
-    $color_80 = colorChangeSL($main_color, 0, -15);
-    $color_90 = colorChangeSL($main_color, 0, -20);
-    $color_95 = colorChangeSL($main_color, 0, -25);
+    
+    $color_60 = hsl2hex(array($main_color_HSL[0], $main_color_HSL[1], $main_color_HSL[2]-5/100 ));
+    $color_70 = hsl2hex(array($main_color_HSL[0], $main_color_HSL[1], $main_color_HSL[2]-10/100 ));
+    $color_80 = hsl2hex(array($main_color_HSL[0], $main_color_HSL[1], $main_color_HSL[2]-15/100 ));
+    $color_90 = hsl2hex(array($main_color_HSL[0], $main_color_HSL[1], $main_color_HSL[2]-20/100 ));
+    $color_95 = hsl2hex(array($main_color_HSL[0], $main_color_HSL[1], $main_color_HSL[2]-25/100 ));
 
     $color_compl = colorCompl($main_color);
-    $color_compl_5 = colorSetSL(colorCompl($main_color), 20, 95);
-    $color_compl_10 = colorSetSL(colorCompl($main_color), 30, 90);
-    $color_compl_80 = colorSetSL(colorCompl($main_color), 100, 40);
+    $color_compl_HSL = hex2hsl($color_compl);
     
-    $color_compl_link_footer = colorSetSL($main_color, 100, 80);
+    $color_compl_5 = hsl2hex(array($color_compl_HSL[0], (20/100), (95/100) ));
+    $color_compl_10 = hsl2hex(array($color_compl_HSL[0], (30/100), (90/100) ));
+    $color_compl_80 = hsl2hex(array($color_compl_HSL[0], (100/100), (40/100) ));
+    $color_compl_link_footer = hsl2hex(array($color_compl_HSL[0], (100/100), (80/100) ));
     
     if(get_option('italiawp_colore_primario')) update_option('italiawp_colore_primario',$color_50);
     else add_option('italiawp_colore_primario',$color_50);
@@ -233,12 +237,15 @@ function italiawp_dymanic_styles() {
   background-color: {$color_10} !important;
 }
 
-.u-color-20 {
+.u-color-20,
+.Footer a {
   color: {$color_20} !important;
 }
 
 .u-background-20,
-.Linklist-link.Linklist-link--lev2, .Linklist-link.Linklist-link--lev2:hover {
+.Linklist-link.Linklist-link--lev2, .Linklist-link.Linklist-link--lev2:hover,
+.Footer-socialIcons [class*=Icon-], .Footer-socialIcons [class^=Icon-],
+#wp-calendar a {
   background-color: {$color_20} !important;
 }
 
@@ -373,7 +380,7 @@ function italiawp_dymanic_styles() {
   background-color: {$color_compl_80} !important;
 }
 
-.Footer a, .CookieBar a, .section-gallery a,
+.CookieBar a, .section-gallery a,
 .owl-prev, .owl-next, figure figcaption > p:first-of-type {
   color: {$color_compl_link_footer} !important;
 }
@@ -382,7 +389,6 @@ function italiawp_dymanic_styles() {
     border-color: {$color_compl_link_footer} !important;
 }
 
-#wp-calendar a, .Footer-socialIcons [class*=Icon-], .Footer-socialIcons [class^=Icon-],
 .Button--default {
   background-color: {$color_compl_link_footer} !important;
 }";

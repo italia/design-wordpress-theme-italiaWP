@@ -1,3 +1,7 @@
+**NOTA IMPORTANTE: Questo tema è deprecato, si consiglia l'utilizzo della nuova versione [ItaliaWP2](https://github.com/italia/design-wordpress-theme-italiaWP2) basata su [Bootstrap Italia](https://italia.github.io/bootstrap-italia/), che sostituisce il Web Toolkit e lo aggiorna secondo le più recenti Linee guida di design.**
+
+---
+
 # ![developers.italia](https://docs.italia.it/media/docsitalia/icons/favicon-32x32.png "developers.italia")  ItaliaWP
 ## Tema WordPress per la Pubblica Amministrazione
 

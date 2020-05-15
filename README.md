@@ -7,7 +7,7 @@
 
 ---
 
-#### [**Guarda la demo**](http://italiawp.borisamico.it/demo) | [**Scarica il tema**](https://raw.githubusercontent.com/italia/design-wordpress-theme-wt/master/italiawp.zip) | [**Pagina del tema**](http://italiawp.borisamico.it)
+#### [**Guarda la demo**](http://italiawp.borisamico.it/demo) | [**Scarica il tema**](https://raw.githubusercontent.com/italia/design-wordpress-theme-italiaWP/master/italiawp.zip) | [**Pagina del tema**](http://italiawp.borisamico.it)
 
 ---
 
@@ -27,7 +27,7 @@ E' in lavorazione la **versione 2** di **ItaliaWP**, perfettamente compatibile c
 
 ## Installare _ItaliaWP_:
 
-1. Scaricare il file [.zip](https://raw.githubusercontent.com/italia/design-wordpress-theme-wt/master/italiawp.zip) in locale
+1. Scaricare il file [.zip](https://raw.githubusercontent.com/italia/design-wordpress-theme-italiaWP/master/italiawp.zip) in locale
 2. Aggingere un nuovo tema nella sezione _"Aspetto" > "Temi"_
 3. Selezionare _"Aggiungi nuovo"_ e successivamente _"Carica tema"_
 4. Scegliere il file .zip scaricato in precedenza, senza decomprimerlo e cliccare _"Installa ora"_
@@ -44,7 +44,7 @@ _[ Testato su **WordPress 5.3.2** (**COMPATIBILE** con il nuovo editor **Gutenbe
 
 ## In caso di utilizzo del _Tema Child_:
 
-Ripetere la procedura precedente ma con il file [.zip](https://raw.githubusercontent.com/italia/design-wordpress-theme-wt/master/italiawp-child.zip)
+Ripetere la procedura precedente ma con il file [.zip](https://raw.githubusercontent.com/italia/design-wordpress-theme-italiaWP/master/italiawp-child.zip)
 del _Tema Child_, successivamente configurare il _Tema Child_ lasciando _ItaliaWP_ con la configurazione iniziale.
 
 ---

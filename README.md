@@ -19,9 +19,10 @@
 
 ---
 
-E' in lavorazione la **versione 2** di **ItaliaWP**, perfettamente compatibile con la versione attuale, che utilizza [**Bootstrap Italia**](https://italia.github.io/bootstrap-italia/) come framework grafico, sulla base del prototipo di [**Sito web dei Comuni Italiani**](https://italia.github.io/design-comuni-prototipi/it/esempi.html).
+E' stata rilasciata la **versione 2** di **ItaliaWP**, perfettamente compatibile con questa versione, che utilizza [**Bootstrap Italia**](https://italia.github.io/bootstrap-italia/) come framework grafico, sulla base del prototipo di [**Sito web dei Comuni Italiani**](https://italia.github.io/design-comuni-prototipi/it/esempi.html).
 
-#### [**Guarda la demo (v.2 alpha)**](http://italiawp.borisamico.it/demo2)
+#### [**Guarda la demo**](http://italiawp.borisamico.it/demo2)
+#### [**Maggiori informazioni**](http://italiawp.borisamico.it/v2)
 
 ---
 

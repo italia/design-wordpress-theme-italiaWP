@@ -9,7 +9,7 @@
 
 if (have_posts()) : while (have_posts()) : the_post();
 
-    $img_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'news-image' );
+    $img_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large' );
     if($img_url!="") {
         $img_url = $img_url[0];
     }else if(get_theme_mod('active_immagine_evidenza_default')) {	

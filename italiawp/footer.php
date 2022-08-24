@@ -173,7 +173,7 @@
 <?php
 include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 if ( is_plugin_active( 'albo-pretorio-on-line/AlboPretorio.php' ) ) { ?>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/webtoolkit/jquery-ui.min.js"></script>
 <?php } ?>
 
 <script src="<?php bloginfo('template_url'); ?>/inc/scripts.js"></script>
